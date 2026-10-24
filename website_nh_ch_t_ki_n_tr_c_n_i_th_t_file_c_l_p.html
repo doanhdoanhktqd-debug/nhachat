@@ -1,0 +1,1921 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NHÀ CHẤT - Kiến Trúc Nội Thất | Quality Home (qualityhome.com.vn)</title>
+  <meta name="description" content="NHÀ CHẤT - Kiến Trúc Nội Thất (qualityhome.com.vn). Đơn vị thiết kế, thi công kiến trúc và nội thất trọn gói uy tín tại Hà Nội. Tích hợp ứng dụng Tính chi phí xây dựng, Xem tuổi làm nhà và Thước Lỗ Ban chuẩn." />
+  <meta name="keywords" content="Nhà Chất, Kiến Trúc Nội Thất, qualityhome.com.vn, thiết kế nhà đẹp, xây nhà trọn gói Hà Nội, tính chi phí xây dựng, thước lỗ ban online, xem tuổi làm nhà" />
+  <meta property="og:title" content="NHÀ CHẤT - Kiến Trúc Nội Thất | Quality Home" />
+  <meta property="og:description" content="100% khách hàng đề xuất • Địa chỉ: Số 15A, ngõ 214 Nguyễn Xiển, Hạ Đình, Thanh Xuân, Hà Nội • Hotline: 093 991 91 06" />
+  <meta property="og:url" content="https://qualityhome.com.vn" />
+  <meta property="og:type" content="website" />
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #FAF8F5;
+      color: #1C1917;
+    }
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #d97706;
+      border-radius: 9999px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #b45309;
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col selection:bg-amber-600 selection:text-white">
+
+  <!-- ==========================================
+       1. TOP BAR QUẢN TRỊ & THÔNG TIN THƯƠNG HIỆU
+  ========================================== -->
+  <div class="bg-stone-950 text-stone-300 text-xs py-2.5 px-4 border-b border-stone-800">
+    <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
+      <div class="flex flex-wrap items-center gap-3">
+        <span class="inline-flex items-center gap-1.5 bg-amber-500/15 border border-amber-500/40 text-amber-400 px-2.5 py-0.5 rounded-full font-bold">
+          <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400 text-amber-400"></i>
+          100% đề xuất (11 lượt đánh giá)
+        </span>
+        <span class="hidden xl:flex items-center gap-1.5 text-stone-300">
+          <i data-lucide="map-pin" class="w-3.5 h-3.5 text-amber-500 shrink-0"></i>
+          Số nhà 15A, ngõ 214 đường Nguyễn Xiển, Phường Hạ Đình, Quận Thanh Xuân, Hà Nội
+        </span>
+      </div>
+
+      <div class="flex flex-wrap items-center gap-3 sm:gap-4">
+        <a href="https://qualityhome.com.vn" target="_blank" rel="noreferrer" class="hidden sm:flex items-center gap-1 text-stone-300 hover:text-amber-400 transition">
+          <i data-lucide="globe" class="w-3.5 h-3.5 text-amber-500"></i> qualityhome.com.vn
+        </a>
+        <a href="mailto:nhachatdesign@gmail.com" class="hidden md:flex items-center gap-1 text-stone-300 hover:text-amber-400 transition">
+          <i data-lucide="mail" class="w-3.5 h-3.5 text-amber-500"></i> nhachatdesign@gmail.com
+        </a>
+        <button onclick="downloadThisHtmlFile()" class="flex items-center gap-1.5 bg-amber-500 hover:bg-amber-400 text-stone-950 font-black px-3 py-1 rounded-full transition shadow-sm" title="Tải ngay file index.html này về máy để up lên Hosting">
+          <i data-lucide="download" class="w-3.5 h-3.5"></i> Tải file index.html
+        </button>
+        <a href="tel:+84939919106" class="flex items-center gap-1.5 font-bold text-white bg-stone-800 px-3 py-1 rounded-full border border-stone-700 hover:border-amber-500 transition">
+          <i data-lucide="phone" class="w-3.5 h-3.5 text-emerald-400"></i> 093 991 91 06
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       2. STICKY HEADER NAVIGATION
+  ========================================== -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-stone-200 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-4">
+      <!-- Brand Logo -->
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="w-12 h-12 bg-stone-900 text-amber-500 flex flex-col items-center justify-center rounded-xl font-black tracking-tighter border-2 border-amber-500/80 shadow-md group-hover:bg-amber-600 group-hover:text-white transition">
+          <span class="text-base leading-none">NHÀ</span>
+          <span class="text-[10px] tracking-widest text-stone-200 group-hover:text-white mt-0.5">CHẤT</span>
+        </div>
+        <div>
+          <div class="flex items-center gap-2">
+            <span class="font-black text-xl tracking-tight text-stone-900 leading-none">NHÀ CHẤT</span>
+            <span class="hidden sm:inline-block text-[10px] font-bold bg-amber-100 text-amber-800 px-2 py-0.5 rounded">Quality Home</span>
+          </div>
+          <span class="block text-[10px] tracking-[0.14em] text-amber-700 font-bold mt-1 uppercase">
+            KIẾN TRÚC NỘI THẤT • QUALITYHOME.COM.VN
+          </span>
+        </div>
+      </a>
+
+      <!-- Desktop Menu -->
+      <nav class="hidden lg:flex items-center gap-6 text-sm font-semibold text-stone-700">
+        <a href="#projects" class="hover:text-amber-600 transition">Dự Án & Thực Tế</a>
+        <button onclick="switchUtilityTab('cost', true)" class="flex items-center gap-1.5 text-amber-800 bg-amber-50 px-3.5 py-1.5 rounded-full border border-amber-200 hover:bg-amber-100 transition font-bold">
+          <i data-lucide="calculator" class="w-4 h-4 text-amber-600"></i> Tính Chi Phí Xây Dựng
+        </button>
+        <button onclick="switchUtilityTab('fengshui', true)" class="hover:text-amber-600 transition flex items-center gap-1">
+          <i data-lucide="compass" class="w-4 h-4 text-amber-600"></i> Xem Tuổi Làm Nhà
+        </button>
+        <button onclick="switchUtilityTab('loban', true)" class="hover:text-amber-600 transition flex items-center gap-1">
+          <i data-lucide="ruler" class="w-4 h-4 text-amber-600"></i> Thước Lỗ Ban
+        </button>
+        <a href="#pricing" class="hover:text-amber-600 transition">Báo Giá</a>
+        <a href="#handbook" class="hover:text-amber-600 transition">Cẩm Nang</a>
+        <a href="#contact-office" class="hover:text-amber-600 transition">Liên Hệ</a>
+      </nav>
+
+      <!-- CTA Button -->
+      <div class="flex items-center gap-2">
+        <button onclick="openConsultModal('Tôi cần NHÀ CHẤT tư vấn thiết kế kiến trúc - nội thất & báo giá thi công trọn gói.')" class="bg-stone-900 hover:bg-amber-600 text-white px-4 sm:px-5 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition shadow-md flex items-center gap-2">
+          <i data-lucide="pen-tool" class="w-4 h-4 text-amber-400"></i>
+          <span>Đăng Ký Tư Vấn</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================
+       3. HERO SECTION SANG TRỌNG
+  ========================================== -->
+  <section class="relative bg-stone-900 text-white overflow-hidden">
+    <div class="absolute inset-0 opacity-45">
+      <img
+        src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1920&q=85"
+        alt="NHÀ CHẤT - Kiến trúc Nội thất"
+        onerror="this.src='https://placehold.co/1920x1080/1c1917/f59e0b?text=NHA+CHAT+QUALITY+HOME'"
+        class="w-full h-full object-cover"
+      />
+      <div class="absolute inset-0 bg-gradient-to-r from-stone-950 via-stone-950/85 to-transparent"></div>
+    </div>
+
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
+      <div class="max-w-3xl">
+        <div class="inline-flex flex-wrap items-center gap-2 bg-amber-500/20 border border-amber-400/40 text-amber-300 px-3.5 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-6">
+          <i data-lucide="award" class="w-4 h-4"></i>
+          <span>NHÀ CHẤT - Kiến Trúc Nội Thất • ⭐ 100% đề xuất (11 lượt đánh giá)</span>
+        </div>
+
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-[1.12] mb-6">
+          Kiến Tạo Không Gian Sống <span class="text-amber-400">Đậm Chất Riêng</span> Cùng NHÀ CHẤT
+        </h1>
+
+        <p class="text-stone-300 text-base sm:text-lg leading-relaxed mb-8 max-w-2xl">
+          <strong>NHÀ CHẤT - Kiến Trúc Nội Thất (<span class="text-amber-400">qualityhome.com.vn</span>)</strong> chuyên sâu Thiết kế Kiến trúc, Nội thất may đo và Xây nhà trọn gói tại Hà Nội & toàn miền Bắc. Tối ưu công năng, chuẩn mực phong thủy, minh bạch 100% vật tư thi công.
+        </p>
+
+        <!-- Hero Action Buttons -->
+        <div class="flex flex-wrap gap-3.5 mb-12">
+          <button onclick="switchUtilityTab('cost', true)" class="bg-amber-500 hover:bg-amber-400 text-stone-950 px-6 py-3.5 rounded-xl font-black text-sm flex items-center gap-2 shadow-lg shadow-amber-500/25 transition">
+            <i data-lucide="calculator" class="w-5 h-5"></i> Tính Chi Phí Xây Nhà (30 Giây)
+          </button>
+          <button onclick="switchUtilityTab('fengshui', true)" class="bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/25 text-white px-5 py-3.5 rounded-xl font-bold text-sm flex items-center gap-2 transition">
+            <i data-lucide="compass" class="w-5 h-5 text-amber-400"></i> Xem Tuổi Làm Nhà
+          </button>
+          <button onclick="switchUtilityTab('loban', true)" class="bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/25 text-white px-5 py-3.5 rounded-xl font-bold text-sm flex items-center gap-2 transition">
+            <i data-lucide="ruler" class="w-5 h-5 text-emerald-400"></i> Thước Lỗ Ban 3 Thước
+          </button>
+        </div>
+
+        <!-- Key Metrics -->
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-6 pt-8 border-t border-white/15">
+          <div>
+            <div class="text-2xl sm:text-3xl font-black text-amber-400">100%</div>
+            <div class="text-xs text-stone-400 mt-1">Đề xuất (11 lượt đánh giá)</div>
+          </div>
+          <div>
+            <div class="text-2xl sm:text-3xl font-black text-white">500+</div>
+            <div class="text-xs text-stone-400 mt-1">Hồ sơ Thiết kế & Thi công</div>
+          </div>
+          <div>
+            <div class="text-2xl sm:text-3xl font-black text-emerald-400">0%</div>
+            <div class="text-xs text-stone-400 mt-1">Cam kết không phát sinh</div>
+          </div>
+          <div>
+            <div class="text-2xl sm:text-3xl font-black text-white">10 Năm</div>
+            <div class="text-xs text-stone-400 mt-1">Bảo hành kết cấu công trình</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       4. THANH MỞ NHANH 3 TIỆN ÍCH XÂY DỰNG (MM2.VN STYLE)
+  ========================================== -->
+  <section class="relative z-20 -mt-8 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="bg-white rounded-2xl shadow-xl border border-stone-200 p-4 sm:p-6 grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div onclick="switchUtilityTab('cost', true)" class="flex items-start gap-4 p-4 rounded-xl cursor-pointer transition border border-amber-300 bg-amber-50/60 hover:bg-amber-50">
+        <div class="w-12 h-12 rounded-xl bg-amber-600 text-white flex items-center justify-center shrink-0 shadow-md">
+          <i data-lucide="calculator" class="w-6 h-6"></i>
+        </div>
+        <div>
+          <span class="text-[11px] font-bold uppercase tracking-wider text-amber-700">Tiện ích trực tuyến #1</span>
+          <h3 class="font-bold text-stone-900 text-base mt-0.5">Tính Chi Phí Xây Dựng</h3>
+          <p class="text-xs text-stone-600 mt-1">Bóc tách diện tích quy đổi m² (Móng, Hầm/Tum, Thân, Mái) & dự toán VNĐ chuẩn xác.</p>
+        </div>
+      </div>
+
+      <div onclick="switchUtilityTab('fengshui', true)" class="flex items-start gap-4 p-4 rounded-xl cursor-pointer transition border border-stone-200 hover:bg-stone-50">
+        <div class="w-12 h-12 rounded-xl bg-stone-900 text-amber-400 flex items-center justify-center shrink-0 shadow-md">
+          <i data-lucide="compass" class="w-6 h-6"></i>
+        </div>
+        <div>
+          <span class="text-[11px] font-bold uppercase tracking-wider text-amber-700">Tiện ích trực tuyến #2</span>
+          <h3 class="font-bold text-stone-900 text-base mt-0.5">Xem Tuổi Làm Nhà Phong Thủy</h3>
+          <p class="text-xs text-stone-600 mt-1">Phân tích Tam Tai, Kim Lâu, Hoang Ốc và gợi ý các năm sinh Đại Cát để mượn tuổi.</p>
+        </div>
+      </div>
+
+      <div onclick="switchUtilityTab('loban', true)" class="flex items-start gap-4 p-4 rounded-xl cursor-pointer transition border border-stone-200 hover:bg-stone-50">
+        <div class="w-12 h-12 rounded-xl bg-emerald-700 text-white flex items-center justify-center shrink-0 shadow-md">
+          <i data-lucide="ruler" class="w-6 h-6"></i>
+        </div>
+        <div>
+          <span class="text-[11px] font-bold uppercase tracking-wider text-emerald-700">Tiện ích trực tuyến #3</span>
+          <h3 class="font-bold text-stone-900 text-base mt-0.5">Thước Lỗ Ban Online (3 Thước)</h3>
+          <p class="text-xs text-stone-600 mt-1">Tra cứu đồng thời thước 52.2cm (Thông thủy), 42.9cm (Khối đặc) và 38.8cm (Đồ thờ).</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       5. DANH MỤC DỰ ÁN THIẾT KẾ & CÔNG TRÌNH THỰC TẾ
+  ========================================== -->
+  <section id="projects" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
+      <div>
+        <span class="text-amber-700 font-bold text-xs uppercase tracking-widest flex items-center gap-1.5">
+          <i data-lucide="layers" class="w-4 h-4"></i> Bộ Sưu Tập Kiến Trúc & Thi Công Thực Tế
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-black text-stone-900 mt-2">
+          Công Trình Tiêu Biểu Của NHÀ CHẤT
+        </h2>
+      </div>
+      <p class="text-stone-600 text-sm max-w-md">
+        Khám phá các mẫu Biệt thự, Nhà phố, Nội thất gỗ Óc chó và Khách sạn/Homestay được thiết kế & thi công trọn gói bởi đội ngũ KTS NHÀ CHẤT.
+      </p>
+    </div>
+
+    <!-- Bộ Lọc Đa Tiêu Chí -->
+    <div class="bg-white p-4 sm:p-5 rounded-2xl border border-stone-200 shadow-sm mb-8 space-y-4">
+      <!-- Hàng 1: Loại hình -->
+      <div class="flex flex-wrap items-center justify-between gap-3">
+        <div class="flex flex-wrap gap-2" id="category-buttons">
+          <button onclick="setProjectCategory('Tất cả')" data-cat="Tất cả" class="cat-btn px-4 py-2 rounded-xl text-xs font-bold transition bg-stone-900 text-amber-400 shadow-sm">Tất cả</button>
+          <button onclick="setProjectCategory('Biệt thự')" data-cat="Biệt thự" class="cat-btn px-4 py-2 rounded-xl text-xs font-bold transition bg-stone-100 text-stone-700 hover:bg-stone-200">Biệt thự</button>
+          <button onclick="setProjectCategory('Nhà phố')" data-cat="Nhà phố" class="cat-btn px-4 py-2 rounded-xl text-xs font-bold transition bg-stone-100 text-stone-700 hover:bg-stone-200">Nhà phố</button>
+          <button onclick="setProjectCategory('Nội thất')" data-cat="Nội thất" class="cat-btn px-4 py-2 rounded-xl text-xs font-bold transition bg-stone-100 text-stone-700 hover:bg-stone-200">Nội thất</button>
+          <button onclick="setProjectCategory('Homestay - Khách sạn')" data-cat="Homestay - Khách sạn" class="cat-btn px-4 py-2 rounded-xl text-xs font-bold transition bg-stone-100 text-stone-700 hover:bg-stone-200">Homestay / Khách sạn</button>
+        </div>
+
+        <div class="text-xs font-semibold text-stone-500" id="project-count-label">
+          Hiển thị 8 công trình
+        </div>
+      </div>
+
+      <!-- Hàng 2: Lọc theo Số tầng, Diện tích, Chi phí, Từ khóa -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 pt-3 border-t border-stone-100">
+        <select id="filter-floors" onchange="renderProjects()" class="bg-stone-100 border border-stone-200 rounded-xl px-3.5 py-2.5 text-xs font-semibold text-stone-800 focus:outline-none focus:border-amber-500">
+          <option value="ALL">Mọi quy mô số tầng</option>
+          <option value="1-2">1 - 2 Tầng (Villa vườn / Duplex)</option>
+          <option value="3-4">3 - 4 Tầng (Nhà phố / Biệt thự)</option>
+          <option value="5+">Từ 5 Tầng trở lên (Văn phòng / Khách sạn)</option>
+        </select>
+
+        <select id="filter-area" onchange="renderProjects()" class="bg-stone-100 border border-stone-200 rounded-xl px-3.5 py-2.5 text-xs font-semibold text-stone-800 focus:outline-none focus:border-amber-500">
+          <option value="ALL">Mọi diện tích đất (m²)</option>
+          <option value="UNDER_100">Dưới 100 m²</option>
+          <option value="100_250">Từ 100 m² - 250 m²</option>
+          <option value="OVER_250">Trên 250 m²</option>
+        </select>
+
+        <select id="filter-budget" onchange="renderProjects()" class="bg-stone-100 border border-stone-200 rounded-xl px-3.5 py-2.5 text-xs font-semibold text-stone-800 focus:outline-none focus:border-amber-500">
+          <option value="ALL">Mọi mức đầu tư (Tỷ VNĐ)</option>
+          <option value="UNDER_2.5">Dưới 2.5 Tỷ VNĐ</option>
+          <option value="2.5_TO_5">Từ 2.5 - 5.0 Tỷ VNĐ</option>
+          <option value="OVER_5">Trên 5.0 Tỷ VNĐ</option>
+        </select>
+
+        <div class="relative">
+          <i data-lucide="search" class="w-4 h-4 text-stone-400 absolute left-3.5 top-1/2 -translate-y-1/2"></i>
+          <input
+            type="text"
+            id="filter-search"
+            oninput="renderProjects()"
+            placeholder="Tìm theo quận huyện, mã DA, phong cách..."
+            class="w-full pl-9 pr-4 py-2.5 bg-stone-100 border border-stone-200 rounded-xl text-xs focus:outline-none focus:bg-white focus:border-amber-500"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Grid Dự Án -->
+    <div id="projects-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7"></div>
+  </section>
+
+  <!-- ==========================================
+       6. BỘ 3 ỨNG DỤNG TIỆN ÍCH XÂY DỰNG TRỰC TUYẾN
+  ========================================== -->
+  <section id="utilities" class="bg-stone-900 text-white py-16 lg:py-20 border-y border-stone-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-10">
+        <span class="inline-flex items-center gap-1.5 text-amber-400 text-xs font-bold uppercase tracking-widest bg-amber-500/10 border border-amber-500/30 px-3.5 py-1 rounded-full">
+          <i data-lucide="sliders" class="w-3.5 h-3.5"></i> Công Cụ Kỹ Thuật & Phong Thủy Độc Quyền NHÀ CHẤT
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-black mt-3">
+          Bộ 3 Ứng Dụng Tiện Ích Xây Dựng Trực Tuyến
+        </h2>
+        <p class="text-stone-400 text-sm mt-2">
+          Hoạch định chính xác ngân sách xây nhà, tra cứu tuổi động thổ hợp mệnh và đo kích thước thông thủy Lỗ Ban ngay trên điện thoại.
+        </p>
+      </div>
+
+      <!-- Nút Chuyển Tab 3 Ứng Dụng -->
+      <div class="flex flex-wrap justify-center gap-3 mb-10">
+        <button id="tab-btn-cost" onclick="switchUtilityTab('cost', false)" class="flex items-center gap-2.5 px-6 py-3.5 rounded-xl font-bold text-sm transition bg-amber-500 text-stone-950 shadow-lg shadow-amber-500/25">
+          <i data-lucide="calculator" class="w-5 h-5"></i>
+          <span>1. Tính Chi Phí Xây Dựng</span>
+        </button>
+        <button id="tab-btn-fengshui" onclick="switchUtilityTab('fengshui', false)" class="flex items-center gap-2.5 px-6 py-3.5 rounded-xl font-bold text-sm transition bg-stone-800 text-stone-300 hover:bg-stone-700">
+          <i data-lucide="compass" class="w-5 h-5"></i>
+          <span>2. Xem Tuổi Làm Nhà Phong Thủy</span>
+        </button>
+        <button id="tab-btn-loban" onclick="switchUtilityTab('loban', false)" class="flex items-center gap-2.5 px-6 py-3.5 rounded-xl font-bold text-sm transition bg-stone-800 text-stone-300 hover:bg-stone-700">
+          <i data-lucide="ruler" class="w-5 h-5"></i>
+          <span>3. Thước Lỗ Ban (52.2 - 42.9 - 38.8)</span>
+        </button>
+      </div>
+
+      <!-- ==========================================
+           ỨNG DỤNG 1: TÍNH CHI PHÍ XÂY DỰNG
+      ========================================== -->
+      <div id="utility-panel-cost" class="bg-white text-stone-900 rounded-3xl p-6 sm:p-8 lg:p-10 shadow-2xl grid grid-cols-1 lg:grid-cols-12 gap-8">
+        <!-- Cột Trái: Form Nhập Liệu -->
+        <div class="lg:col-span-7 space-y-5">
+          <div class="border-b border-stone-200 pb-4">
+            <h3 class="text-xl font-black text-stone-900 flex items-center gap-2">
+              <i data-lucide="calculator" class="w-6 h-6 text-amber-600"></i>
+              Nhập Thông Số Công Trình Dự Kiến
+            </h3>
+            <p class="text-xs text-stone-500 mt-1">
+              Tự động quy đổi diện tích xây dựng ($m^2$) theo hệ số kết cấu Móng, Tầng hầm/Tum, Tầng lầu và Mái của NHÀ CHẤT.
+            </p>
+          </div>
+
+          <!-- 1. Loại hình công trình -->
+          <div>
+            <label class="block text-xs font-bold uppercase tracking-wider text-stone-700 mb-2">1. Chọn loại hình kiến trúc</label>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+              <label class="cursor-pointer">
+                <input type="radio" name="calc-type" value="nhapho" checked onchange="calculateConstructionCost()" class="peer sr-only" />
+                <div class="p-3.5 rounded-xl border border-stone-200 peer-checked:border-amber-600 peer-checked:bg-amber-50/80 peer-checked:ring-2 peer-checked:ring-amber-500/20 transition">
+                  <div class="font-bold text-sm text-stone-900">Nhà phố / Nhà ống</div>
+                  <div class="text-[11px] text-stone-500 mt-0.5">1 - 2 mặt tiền phố</div>
+                </div>
+              </label>
+              <label class="cursor-pointer">
+                <input type="radio" name="calc-type" value="bietthu" onchange="calculateConstructionCost()" class="peer sr-only" />
+                <div class="p-3.5 rounded-xl border border-stone-200 peer-checked:border-amber-600 peer-checked:bg-amber-50/80 peer-checked:ring-2 peer-checked:ring-amber-500/20 transition">
+                  <div class="font-bold text-sm text-stone-900">Biệt thự / Villa</div>
+                  <div class="text-[11px] text-stone-500 mt-0.5">3 - 4 mặt thoáng, sân vườn</div>
+                </div>
+              </label>
+              <label class="cursor-pointer">
+                <input type="radio" name="calc-type" value="cap4" onchange="calculateConstructionCost()" class="peer sr-only" />
+                <div class="p-3.5 rounded-xl border border-stone-200 peer-checked:border-amber-600 peer-checked:bg-amber-50/80 peer-checked:ring-2 peer-checked:ring-amber-500/20 transition">
+                  <div class="font-bold text-sm text-stone-900">Nhà vườn / Cấp 4</div>
+                  <div class="text-[11px] text-stone-500 mt-0.5">Villa nghỉ dưỡng 1 tầng</div>
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <!-- 2. Kích thước đất & Số tầng -->
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <div>
+              <label class="block text-xs font-bold text-stone-700 mb-1.5">Chiều rộng mặt tiền (m)</label>
+              <input type="number" id="calc-width" value="5" min="2.5" max="100" step="0.5" oninput="calculateConstructionCost()" class="w-full px-4 py-2.5 rounded-xl border border-stone-300 font-bold text-stone-900 focus:outline-none focus:border-amber-600" />
+            </div>
+            <div>
+              <label class="block text-xs font-bold text-stone-700 mb-1.5">Chiều dài đất XD (m)</label>
+              <input type="number" id="calc-length" value="20" min="4" max="200" step="0.5" oninput="calculateConstructionCost()" class="w-full px-4 py-2.5 rounded-xl border border-stone-300 font-bold text-stone-900 focus:outline-none focus:border-amber-600" />
+            </div>
+            <div>
+              <label class="block text-xs font-bold text-stone-700 mb-1.5">Số tầng cao (Lầu)</label>
+              <select id="calc-floors" onchange="calculateConstructionCost()" class="w-full px-4 py-2.5 rounded-xl border border-stone-300 font-bold text-stone-900 bg-white focus:outline-none focus:border-amber-600">
+                <option value="1">1 Tầng</option>
+                <option value="2">2 Tầng</option>
+                <option value="3" selected>3 Tầng</option>
+                <option value="4">4 Tầng</option>
+                <option value="5">5 Tầng</option>
+                <option value="6">6 Tầng</option>
+                <option value="7">7 Tầng</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- 3. Kết cấu Móng, Tầng Hầm/Tum & Mái -->
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <div>
+              <label class="block text-xs font-bold text-stone-700 mb-1.5">Giải pháp Móng</label>
+              <select id="calc-foundation" onchange="calculateConstructionCost()" class="w-full px-3.5 py-2.5 rounded-xl border border-stone-300 font-semibold text-xs text-stone-900 bg-white">
+                <option value="mongdon">Móng đơn (35% DT đất)</option>
+                <option value="mongbang" selected>Móng băng (55% DT đất)</option>
+                <option value="mongcoc">Móng đài cọc (45% DT đất)</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-xs font-bold text-stone-700 mb-1.5">Tầng Hầm / Tum Thang</label>
+              <select id="calc-extra" onchange="calculateConstructionCost()" class="w-full px-3.5 py-2.5 rounded-xl border border-stone-300 font-semibold text-xs text-stone-900 bg-white">
+                <option value="tum" selected>Có tầng Tum thang (35% DT)</option>
+                <option value="none">Không làm Hầm / Tum (0%)</option>
+                <option value="banham">Bán hầm (150% DT đất)</option>
+                <option value="ham">Tầng hầm + Tum (185% DT)</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-xs font-bold text-stone-700 mb-1.5">Giải pháp Mái</label>
+              <select id="calc-roof" onchange="calculateConstructionCost()" class="w-full px-3.5 py-2.5 rounded-xl border border-stone-300 font-semibold text-xs text-stone-900 bg-white">
+                <option value="btct" selected>Mái bằng BTCT (50% DT)</option>
+                <option value="mainhat">Mái Nhật / Mái Thái (70% DT)</option>
+                <option value="maiton">Mái Tôn chống nóng (30% DT)</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- 4. Chọn Gói Thi Công -->
+          <div>
+            <label class="block text-xs font-bold uppercase tracking-wider text-stone-700 mb-2">4. Chọn gói đầu tư thi công</label>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+              <label class="cursor-pointer">
+                <input type="radio" name="calc-package" value="xaytho" onchange="calculateConstructionCost()" class="peer sr-only" />
+                <div class="p-3.5 rounded-xl border border-stone-200 peer-checked:border-amber-600 peer-checked:bg-amber-50 peer-checked:ring-2 peer-checked:ring-amber-500/20 h-full flex flex-col justify-between transition">
+                  <div>
+                    <div class="font-bold text-xs text-stone-900">Xây Thô & Nhân Công HT</div>
+                    <div class="text-amber-700 font-black text-xs mt-1">~3.85 - 4.3 Triệu/m²</div>
+                  </div>
+                  <div class="text-[11px] text-stone-500 mt-2">Khung BTCT, tường xây, điện nước âm</div>
+                </div>
+              </label>
+
+              <label class="cursor-pointer">
+                <input type="radio" name="calc-package" value="tieuchuan" checked onchange="calculateConstructionCost()" class="peer sr-only" />
+                <div class="p-3.5 rounded-xl border border-stone-200 peer-checked:border-amber-600 peer-checked:bg-amber-50 peer-checked:ring-2 peer-checked:ring-amber-500/20 h-full flex flex-col justify-between transition">
+                  <div>
+                    <div class="font-bold text-xs text-stone-900">Trọn Gói Tiêu Chuẩn</div>
+                    <div class="text-amber-700 font-black text-xs mt-1">~6.35 - 6.8 Triệu/m²</div>
+                  </div>
+                  <div class="text-[11px] text-stone-500 mt-2">Chìa khóa trao tay, vật tư chính hãng</div>
+                </div>
+              </label>
+
+              <label class="cursor-pointer">
+                <input type="radio" name="calc-package" value="caocap" onchange="calculateConstructionCost()" class="peer sr-only" />
+                <div class="p-3.5 rounded-xl border border-stone-200 peer-checked:border-amber-600 peer-checked:bg-amber-50 peer-checked:ring-2 peer-checked:ring-amber-500/20 h-full flex flex-col justify-between transition">
+                  <div>
+                    <div class="font-bold text-xs text-stone-900">Trọn Gói Cao Cấp Luxury</div>
+                    <div class="text-amber-700 font-black text-xs mt-1">~7.9 - 9.2 Triệu/m²</div>
+                  </div>
+                  <div class="text-[11px] text-stone-500 mt-2">Thiết bị nhập khẩu, hoàn thiện tinh xảo</div>
+                </div>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cột Phải: Kết Quả Bóc Tách Diện Tích & Ngân Sách -->
+        <div class="lg:col-span-5 bg-stone-950 text-white rounded-2xl p-6 sm:p-7 flex flex-col justify-between border border-stone-800">
+          <div>
+            <div class="flex items-center justify-between border-b border-stone-800 pb-4 mb-5">
+              <div>
+                <span class="text-[11px] uppercase tracking-widest text-amber-400 font-bold">Bảng Bóc Tách Dự Toán</span>
+                <h4 id="res-land-title" class="text-lg font-black mt-0.5">Đất 5m x 20m (100 m²)</h4>
+              </div>
+              <span id="res-total-area-badge" class="bg-amber-500/20 text-amber-300 border border-amber-500/30 text-xs font-bold px-3 py-1 rounded-full">
+                Tổng sàn: 440 m²
+              </span>
+            </div>
+
+            <div class="space-y-3 text-xs">
+              <div class="flex justify-between items-center py-2 border-b border-stone-800/80">
+                <div>
+                  <span id="res-found-label" class="text-stone-300 font-semibold block">1. Phần Móng (Móng băng - 55% DT)</span>
+                  <span id="res-found-area" class="text-stone-500">Quy đổi: 55 m²</span>
+                </div>
+                <span id="res-found-cost" class="font-bold text-stone-200">349.250.000 đ</span>
+              </div>
+
+              <div class="flex justify-between items-center py-2 border-b border-stone-800/80">
+                <div>
+                  <span id="res-body-label" class="text-stone-300 font-semibold block">2. Phần Thân & Hầm/Tum</span>
+                  <span id="res-body-area" class="text-stone-500">Quy đổi: 335 m²</span>
+                </div>
+                <span id="res-body-cost" class="font-bold text-stone-200">2.127.250.000 đ</span>
+              </div>
+
+              <div class="flex justify-between items-center py-2 border-b border-stone-800/80">
+                <div>
+                  <span id="res-roof-label" class="text-stone-300 font-semibold block">3. Phần Mái (Mái BTCT - 50% DT)</span>
+                  <span id="res-roof-area" class="text-stone-500">Quy đổi: 50 m²</span>
+                </div>
+                <span id="res-roof-cost" class="font-bold text-stone-200">317.500.000 đ</span>
+              </div>
+
+              <div class="flex justify-between items-center py-2 border-b border-stone-800/80">
+                <div>
+                  <span class="text-emerald-400 font-semibold block">4. Hồ sơ Thiết kế Kiến trúc & M&E</span>
+                  <span id="res-design-val" class="text-stone-500">Trị giá: 79.200.000 đ</span>
+                </div>
+                <span class="bg-emerald-500/20 text-emerald-300 px-2.5 py-0.5 rounded font-bold">
+                  Khấu trừ 100% khi thi công
+                </span>
+              </div>
+            </div>
+
+            <!-- Tổng tiền -->
+            <div class="mt-6 bg-gradient-to-br from-amber-500/20 to-stone-900 border border-amber-500/40 rounded-2xl p-5">
+              <div class="flex justify-between items-baseline">
+                <span class="text-xs uppercase tracking-wider text-amber-300 font-bold">Tổng Chi Phí Dự Kiến</span>
+                <span id="res-unit-price" class="text-[11px] text-stone-400">Đơn giá: 6.350.000 đ/m²</span>
+              </div>
+              <div id="res-total-cost" class="text-3xl sm:text-4xl font-black text-amber-400 mt-2">
+                2.794.000.000 đ
+              </div>
+              <p class="text-[11px] text-stone-400 mt-2 leading-relaxed">
+                * Dự toán tính theo đơn giá thực tế của NHÀ CHẤT tại Hà Nội & miền Bắc. Cam kết ký hợp đồng khóa giá vật tư không phát sinh.
+              </p>
+            </div>
+          </div>
+
+          <div class="mt-6">
+            <button onclick="requestCostQuote()" class="w-full bg-amber-500 hover:bg-amber-400 text-stone-950 font-black py-3.5 rounded-xl text-xs sm:text-sm transition flex items-center justify-center gap-2 shadow-lg">
+              <i data-lucide="file-text" class="w-4 h-4"></i> Nhận Bảng Bóc Tách Vật Tư Chi Tiết Qua Zalo / Email
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ==========================================
+           ỨNG DỤNG 2: XEM TUỔI LÀM NHÀ PHONG THỦY
+      ========================================== -->
+      <div id="utility-panel-fengshui" class="hidden bg-white text-stone-900 rounded-3xl p-6 sm:p-8 lg:p-10 shadow-2xl grid grid-cols-1 lg:grid-cols-12 gap-8">
+        <!-- Cột Trái -->
+        <div class="lg:col-span-5 space-y-6 border-b lg:border-b-0 lg:border-r border-stone-200 pb-6 lg:pb-0 lg:pr-8">
+          <div>
+            <h3 class="text-xl font-black text-stone-900 flex items-center gap-2">
+              <i data-lucide="compass" class="w-6 h-6 text-amber-600"></i>
+              Xem Tuổi Động Thổ Làm Nhà
+            </h3>
+            <p class="text-xs text-stone-500 mt-1">
+              Kiểm tra đầy đủ 3 hạn lớn trong xây dựng Dương trạch: <strong>Tam Tai - Kim Lâu - Hoang Ốc</strong>.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-bold text-stone-700 mb-1.5">Năm sinh gia chủ (Âm lịch)</label>
+              <input type="number" id="fs-birth-year" value="1990" min="1940" max="2015" oninput="evaluateFengShui()" class="w-full px-4 py-3 rounded-xl border border-stone-300 font-black text-lg text-stone-900 focus:outline-none focus:border-amber-600" />
+            </div>
+            <div>
+              <label class="block text-xs font-bold text-stone-700 mb-1.5">Năm dự kiến khởi công</label>
+              <select id="fs-build-year" onchange="evaluateFengShui()" class="w-full px-4 py-3 rounded-xl border border-stone-300 font-black text-lg text-stone-900 bg-white focus:outline-none focus:border-amber-600">
+                <option value="2026" selected>Năm 2026 (Bính Ngọ)</option>
+                <option value="2027">Năm 2027 (Đinh Mùi)</option>
+                <option value="2028">Năm 2028 (Mậu Thân)</option>
+                <option value="2029">Năm 2029 (Kỷ Dậu)</option>
+                <option value="2030">Năm 2030 (Canh Tuất)</option>
+                <option value="2031">Năm 2031 (Tân Hợi)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="bg-stone-900 text-white rounded-2xl p-5 space-y-3">
+            <div class="flex justify-between items-center border-b border-stone-800 pb-3">
+              <span class="text-xs text-stone-400">Tuổi mụ (Tuổi Âm lịch):</span>
+              <span id="fs-summary-age" class="text-base font-black text-amber-400">37 Tuổi (Canh Ngọ)</span>
+            </div>
+            <div class="flex justify-between items-center border-b border-stone-800 pb-3">
+              <span class="text-xs text-stone-400">Năm dự kiến xây dựng:</span>
+              <span id="fs-summary-build" class="text-sm font-bold text-white">2026 - Năm Bính Ngọ</span>
+            </div>
+            <div class="pt-1 flex items-center justify-between gap-2">
+              <span class="text-xs text-stone-400">Kết luận phong thủy:</span>
+              <span id="fs-summary-badge" class="bg-emerald-500 text-stone-950 font-black text-xs px-3 py-1 rounded-full">
+                ĐẠI CÁT - RẤT TỐT ĐỂ LÀM NHÀ
+              </span>
+            </div>
+          </div>
+
+          <button onclick="openConsultModal('Tôi cần KTS Phong thủy NHÀ CHẤT tư vấn xem tuổi động thổ và bố trí hướng bếp, bàn thờ, cửa chính hợp mệnh.')" class="w-full bg-amber-500 hover:bg-amber-400 text-stone-950 font-black py-3 rounded-xl text-xs uppercase tracking-wider transition">
+            Đặt Lịch Tư Vấn Phong Thủy Mặt Bằng
+          </button>
+        </div>
+
+        <!-- Cột Phải: Chi Tiết 3 Hạn & Gợi Ý Mượn Tuổi -->
+        <div class="lg:col-span-7 space-y-4">
+          <h4 class="font-black text-base text-stone-900">
+            Bảng Luận Giải Chi Tiết: Tam Tai • Kim Lâu • Hoang Ốc
+          </h4>
+
+          <div id="fs-details-container" class="space-y-3.5"></div>
+
+          <!-- Danh sách tuổi đẹp để mượn tuổi -->
+          <div class="bg-amber-50 border border-amber-200 rounded-2xl p-4 mt-4">
+            <div class="text-xs font-bold text-amber-900 uppercase tracking-wider mb-2.5 flex items-center gap-1.5">
+              <i data-lucide="sparkles" class="w-4 h-4 text-amber-600"></i>
+              <span id="fs-borrow-title">Danh sách các năm sinh Đại Cát để Mượn Tuổi Động Thổ:</span>
+            </div>
+            <div id="fs-borrow-list" class="flex flex-wrap gap-2"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ==========================================
+           ỨNG DỤNG 3: THƯỚC LỖ BAN ONLINE (3 THƯỚC CHUẨN)
+      ========================================== -->
+      <div id="utility-panel-loban" class="hidden bg-white text-stone-900 rounded-3xl p-6 sm:p-8 lg:p-10 shadow-2xl space-y-7">
+        <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-6 border-b border-stone-200 pb-6">
+          <div>
+            <h3 class="text-xl font-black text-stone-900 flex items-center gap-2">
+              <i data-lucide="ruler" class="w-6 h-6 text-amber-600"></i>
+              Thước Lỗ Ban Phong Thủy Trực Tuyến (Cung Đỏ Tốt - Cung Đen Xấu)
+            </h3>
+            <p class="text-xs text-stone-500 mt-1">
+              Kéo thanh trượt hoặc nhập số Milimet (mm) để tra cứu đồng thời trên cả 3 thước Lỗ Ban chuẩn: 52.2cm, 42.9cm và 38.8cm.
+            </p>
+          </div>
+
+          <div class="flex flex-wrap items-center gap-3">
+            <div class="flex items-center bg-stone-100 rounded-xl border border-stone-300 px-3.5 py-2">
+              <span class="text-xs font-bold text-stone-600 mr-2">Nhập kích thước (mm):</span>
+              <input
+                type="number"
+                id="loban-mm-input"
+                value="1260"
+                min="10"
+                max="10000"
+                oninput="syncLobanValue(this.value)"
+                class="w-24 font-black text-lg text-amber-700 bg-transparent focus:outline-none text-right"
+              />
+              <span id="loban-cm-label" class="text-xs font-semibold text-stone-500 ml-2">(126.0 cm)</span>
+            </div>
+
+            <!-- Nút chọn nhanh kích thước cửa đẹp -->
+            <div class="flex flex-wrap gap-1.5">
+              <button onclick="syncLobanValue(810)" class="px-3 py-2 rounded-lg text-xs font-bold bg-stone-100 hover:bg-amber-500 hover:text-stone-950 transition">Cửa phòng 810mm</button>
+              <button onclick="syncLobanValue(1070)" class="px-3 py-2 rounded-lg text-xs font-bold bg-stone-100 hover:bg-amber-500 hover:text-stone-950 transition">Cửa 1 cánh 1070mm</button>
+              <button onclick="syncLobanValue(1260)" class="px-3 py-2 rounded-lg text-xs font-bold bg-stone-100 hover:bg-amber-500 hover:text-stone-950 transition">Cửa 2 cánh 1260mm</button>
+              <button onclick="syncLobanValue(1760)" class="px-3 py-2 rounded-lg text-xs font-bold bg-stone-100 hover:bg-amber-500 hover:text-stone-950 transition">Cửa chính 1760mm</button>
+              <button onclick="syncLobanValue(2550)" class="px-3 py-2 rounded-lg text-xs font-bold bg-stone-100 hover:bg-amber-500 hover:text-stone-950 transition">Cửa 4 cánh 2550mm</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Thanh kéo trực quan -->
+        <div class="bg-stone-50 p-4 rounded-2xl border border-stone-200">
+          <div class="flex justify-between text-xs font-bold text-stone-500 mb-2">
+            <span>Kéo thanh trượt để dò kích thước rơi vào cả 3 cung Đỏ (100 mm - 3600 mm)</span>
+            <span id="loban-slider-status" class="text-amber-700 font-black">Đang đo: 1260 mm (1.260 mét)</span>
+          </div>
+          <input
+            type="range"
+            id="loban-range-slider"
+            min="100"
+            max="3600"
+            step="1"
+            value="1260"
+            oninput="syncLobanValue(this.value)"
+            class="w-full accent-amber-600 h-2.5 bg-stone-300 rounded-lg cursor-pointer"
+          />
+        </div>
+
+        <!-- Hiển thị 3 Thước Lỗ Ban -->
+        <div id="loban-rulers-container" class="space-y-6"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       7. BẢNG BÁO GIÁ & QUY TRÌNH 6 BƯỚC NHÀ CHẤT
+  ========================================== -->
+  <section id="pricing" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-20">
+    <div class="text-center max-w-3xl mx-auto mb-12">
+      <span class="text-amber-700 font-bold text-xs uppercase tracking-widest">
+        Minh Bạch Đơn Giá & Hợp Đồng Cam Kết Chất Lượng
+      </span>
+      <h2 class="text-3xl sm:text-4xl font-black text-stone-900 mt-2">
+        Bảng Báo Giá Thiết Kế & Thi Công NHÀ CHẤT
+      </h2>
+      <p class="text-stone-600 text-sm mt-2">
+        Đặc quyền khách hàng tại <strong>NHÀ CHẤT (qualityhome.com.vn)</strong>: Miễn phí 100% chi phí thiết kế Kiến trúc & Nội thất khi ký hợp đồng Thi công trọn gói.
+      </p>
+    </div>
+
+    <!-- 3 Gói Báo Giá -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-7 mb-16">
+      <!-- Card 1 -->
+      <div class="rounded-3xl p-7 flex flex-col justify-between border bg-white text-stone-900 border-stone-200 shadow-sm">
+        <div>
+          <span class="text-[11px] font-bold px-3 py-1 rounded-full bg-stone-100 text-amber-800">Gói Tiêu Chuẩn</span>
+          <h3 class="text-xl font-black mt-4">Thiết Kế Kiến Trúc Nhà Phố</h3>
+          <div class="mt-4 flex items-baseline gap-1.5">
+            <span class="text-3xl sm:text-4xl font-black text-stone-900">160.000</span>
+            <span class="text-xs text-stone-500">VNĐ / m² sàn</span>
+          </div>
+          <ul class="mt-6 space-y-3 text-xs text-stone-600">
+            <li class="flex items-start gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600 shrink-0"></i> Mặt bằng công năng tối ưu chuẩn Phong thủy Lỗ Ban</li>
+            <li class="flex items-start gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600 shrink-0"></i> Phối cảnh 3D ngoại thất đa góc nhìn sắc nét</li>
+            <li class="flex items-start gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600 shrink-0"></i> Hồ sơ kỹ thuật Kết cấu chịu lực & Điện nước M&E</li>
+            <li class="flex items-start gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600 shrink-0"></i> Hỗ trợ bản vẽ xin Giấy phép xây dựng</li>
+            <li class="flex items-start gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600 shrink-0"></i> Giám sát tác giả định kỳ tại công trường</li>
+          </ul>
+        </div>
+        <button onclick="openConsultModal('Tôi muốn nhận báo giá & hồ sơ mẫu gói Thiết kế Kiến trúc Nhà phố (160.000đ/m2).')" class="mt-8 w-full py-3.5 rounded-xl font-bold text-xs uppercase tracking-wider bg-stone-900 hover:bg-stone-800 text-white transition">
+          Nhận Hồ Sơ Mẫu & Báo Giá
+        </button>
+      </div>
+
+      <!-- Card 2 (Featured) -->
+      <div class="rounded-3xl p-7 flex flex-col justify-between border bg-stone-900 text-white border-amber-500 shadow-2xl md:scale-[1.03]">
+        <div>
+          <span class="text-[11px] font-bold px-3 py-1 rounded-full bg-amber-500 text-stone-950">Hoàn tiền 100% khi thi công</span>
+          <h3 class="text-xl font-black mt-4">Thiết Kế Trọn Gói (Kiến Trúc + Nội Thất)</h3>
+          <div class="mt-4 flex items-baseline gap-1.5">
+            <span class="text-3xl sm:text-4xl font-black text-amber-400">250.000</span>
+            <span class="text-xs text-stone-400">VNĐ / m² sàn</span>
+          </div>
+          <ul class="mt-6 space-y-3 text-xs text-stone-300">
+            <li class="flex items-start gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-amber-400 shrink-0"></i> Bao gồm toàn bộ hạng mục Gói Thiết kế Kiến trúc</li>
+            <li class="flex items-start gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-amber-400 shrink-0"></i> Phối cảnh 3D Nội thất từng phòng chuẩn vật liệu thực tế</li>
+            <li class="flex items-start gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-amber-400 shrink-0"></i> Bản vẽ kỹ thuật sản xuất đồ gỗ CNC & kích thước Lỗ Ban</li>
+            <li class="flex items-start gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-amber-400 shrink-0"></i> Bảng dự toán bóc tách khối lượng vật tư chính xác 99%</li>
+            <li class="flex items-start gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-amber-400 shrink-0"></i> Khấu trừ 100% phí thiết kế khi ký HĐ thi công trọn gói</li>
+          </ul>
+        </div>
+        <button onclick="openConsultModal('Tôi muốn đăng ký gói Thiết kế Trọn gói Kiến trúc + Nội thất (250.000đ/m2) của NHÀ CHẤT.')" class="mt-8 w-full py-3.5 rounded-xl font-black text-xs uppercase tracking-wider bg-amber-500 hover:bg-amber-400 text-stone-950 transition">
+          Đăng Ký Nhận Ưu Đãi Ngay
+        </button>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="rounded-3xl p-7 flex flex-col justify-between border bg-white text-stone-900 border-stone-200 shadow-sm">
+        <div>
+          <span class="text-[11px] font-bold px-3 py-1 rounded-full bg-stone-100 text-amber-800">Biệt Thự & Dinh Thự</span>
+          <h3 class="text-xl font-black mt-4">Thiết Kế Biệt Thự & Cảnh Quan</h3>
+          <div class="mt-4 flex items-baseline gap-1.5">
+            <span class="text-3xl sm:text-4xl font-black text-stone-900">220.000</span>
+            <span class="text-xs text-stone-500">VNĐ / m² sàn</span>
+          </div>
+          <ul class="mt-6 space-y-3 text-xs text-stone-600">
+            <li class="flex items-start gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600 shrink-0"></i> Quy hoạch tổng thể sân vườn, bể bơi, hồ cá Koi</li>
+            <li class="flex items-start gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600 shrink-0"></i> Giải pháp kết cấu nhịp lớn & thông tầng kính Low-E</li>
+            <li class="flex items-start gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600 shrink-0"></i> Thiết kế điều hòa trung tâm VRV, SmartHome, Điện nhẹ</li>
+            <li class="flex items-start gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600 shrink-0"></i> Mô phỏng thông gió & chiếu sáng tự nhiên</li>
+            <li class="flex items-start gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600 shrink-0"></i> Chủ trì trực tiếp bởi KTS trưởng trên 10 năm kinh nghiệm</li>
+          </ul>
+        </div>
+        <button onclick="openConsultModal('Tôi cần tư vấn gói Thiết kế Biệt thự & Cảnh quan sân vườn (220.000đ/m2).')" class="mt-8 w-full py-3.5 rounded-xl font-bold text-xs uppercase tracking-wider bg-stone-900 hover:bg-stone-800 text-white transition">
+          Nhận Hồ Sơ Mẫu & Báo Giá
+        </button>
+      </div>
+    </div>
+
+    <!-- Quy Trình 6 Bước Thiết Kế & Thi Công -->
+    <div class="bg-white rounded-3xl p-6 sm:p-10 border border-stone-200 shadow-sm">
+      <div class="text-center max-w-2xl mx-auto mb-8">
+        <span class="text-xs font-bold uppercase tracking-widest text-amber-700">Chuẩn Mực Từ Bản Vẽ Đến Công Trường</span>
+        <h3 class="text-2xl font-black text-stone-900 mt-1">
+          Quy Trình 6 Bước Thiết Kế & Thi Công Trọn Gói Tại NHÀ CHẤT
+        </h3>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="p-5 rounded-2xl bg-stone-50 border border-stone-200/80">
+          <span class="text-3xl font-black text-amber-600/35 block mb-2">Bước 01</span>
+          <h4 class="font-bold text-sm text-stone-900 mb-1.5">Khảo Sát Hiện Trạng & Tư Vấn Nhiệm Vụ</h4>
+          <p class="text-xs text-stone-600 leading-relaxed">Đo đạc khu đất bằng máy Laser, kiểm tra địa chất, hướng nắng gió và tư vấn phong thủy tuổi gia chủ.</p>
+        </div>
+        <div class="p-5 rounded-2xl bg-stone-50 border border-stone-200/80">
+          <span class="text-3xl font-black text-amber-600/35 block mb-2">Bước 02</span>
+          <h4 class="font-bold text-sm text-stone-900 mb-1.5">Phương Án Mặt Bằng 2D & Concept 3D</h4>
+          <p class="text-xs text-stone-600 leading-relaxed">Bố trí dây chuyền công năng tối ưu từng m² và dựng phối cảnh 3D ngoại thất, nội thất trực quan.</p>
+        </div>
+        <div class="p-5 rounded-2xl bg-stone-50 border border-stone-200/80">
+          <span class="text-3xl font-black text-amber-600/35 block mb-2">Bước 03</span>
+          <h4 class="font-bold text-sm text-stone-900 mb-1.5">Triển Khai Hồ Sơ Kỹ Thuật & Xin Phép XD</h4>
+          <p class="text-xs text-stone-600 leading-relaxed">Hoàn thiện bản vẽ Kết cấu, Điện nước M&E, bảng bóc tách dự toán chi tiết và đại diện xin GPXD.</p>
+        </div>
+        <div class="p-5 rounded-2xl bg-stone-50 border border-stone-200/80">
+          <span class="text-3xl font-black text-amber-600/35 block mb-2">Bước 04</span>
+          <h4 class="font-bold text-sm text-stone-900 mb-1.5">Thi Công Phần Thô & Giám Sát 24/7</h4>
+          <p class="text-xs text-stone-600 leading-relaxed">Thi công móng, khung bê tông cốt thép, tường xây chuẩn kỹ thuật. Báo cáo hình ảnh/video hàng ngày qua Zalo.</p>
+        </div>
+        <div class="p-5 rounded-2xl bg-stone-50 border border-stone-200/80">
+          <span class="text-3xl font-black text-amber-600/35 block mb-2">Bước 05</span>
+          <h4 class="font-bold text-sm text-stone-900 mb-1.5">Thi Công Hoàn Thiện & Sản Xuất Nội Thất</h4>
+          <p class="text-xs text-stone-600 leading-relaxed">Ốp lát, sơn bả, lắp đặt cửa nhôm kính và lắp đặt nội thất gỗ may đo sản xuất trực tiếp tại xưởng NHÀ CHẤT.</p>
+        </div>
+        <div class="p-5 rounded-2xl bg-stone-50 border border-stone-200/80">
+          <span class="text-3xl font-black text-amber-600/35 block mb-2">Bước 06</span>
+          <h4 class="font-bold text-sm text-stone-900 mb-1.5">Nghiệm Thu Bàn Giao & Bảo Hành 10 Năm</h4>
+          <p class="text-xs text-stone-600 leading-relaxed">Vệ sinh công nghiệp toàn diện, nghiệm thu từng hạng mục cùng gia chủ và bảo hành kết cấu 10 năm.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       8. CẨM NANG XÂY NHÀ (CÓ MODAL ĐỌC BÀI CHI TIẾT)
+  ========================================== -->
+  <section id="handbook" class="bg-stone-100 py-16 border-t border-stone-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-10 gap-4">
+        <div>
+          <span class="text-amber-700 font-bold text-xs uppercase tracking-widest flex items-center gap-1.5">
+            <i data-lucide="book-open" class="w-4 h-4"></i> Kiến Thức Hữu Ích Từ Chuyên Gia NHÀ CHẤT
+          </span>
+          <h2 class="text-3xl font-black text-stone-900 mt-2">
+            Cẩm Nang Xây Nhà: Phong Thủy • Kinh Nghiệm • Pháp Lý
+          </h2>
+        </div>
+      </div>
+
+      <div id="handbook-grid" class="grid grid-cols-1 md:grid-cols-3 gap-7"></div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       9. TRỤ SỞ VĂN PHÒNG LIÊN HỆ (15A NGÕ 214 NGUYỄN XIỂN)
+  ========================================== -->
+  <section id="contact-office" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <div class="bg-stone-900 text-white rounded-3xl p-6 sm:p-10 lg:p-12 shadow-2xl border border-stone-800 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+      <div class="lg:col-span-7 space-y-5">
+        <div class="inline-flex items-center gap-2 bg-amber-500/20 border border-amber-500/40 text-amber-400 px-3.5 py-1 rounded-full text-xs font-bold">
+          <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400"></i>
+          <span>⭐ 100% đề xuất (11 lượt đánh giá)</span>
+        </div>
+        <h2 class="text-2xl sm:text-3xl font-black leading-tight">
+          NHÀ CHẤT - Kiến Trúc Nội Thất (qualityhome.com.vn)
+        </h2>
+        <p class="text-stone-300 text-sm leading-relaxed">
+          Quý khách hàng có thể ghé thăm trực tiếp văn phòng <strong>NHÀ CHẤT</strong> tại Quận Thanh Xuân, Hà Nội để trải nghiệm vật liệu thực tế, xem hồ sơ thiết kế mẫu và làm việc trực tiếp 1-1 cùng Kiến trúc sư chủ trì.
+        </p>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+          <div class="bg-stone-800/90 border border-stone-700 p-4 rounded-2xl flex items-start gap-3">
+            <i data-lucide="map-pin" class="w-5 h-5 text-amber-400 shrink-0 mt-0.5"></i>
+            <div>
+              <span class="text-[11px] uppercase tracking-wider text-stone-400 font-bold block">Địa chỉ trụ sở</span>
+              <span class="text-xs font-semibold text-white mt-1 block leading-relaxed">
+                Số nhà 15A, ngõ 214 đường Nguyễn Xiển, Phường Hạ Đình, Quận Thanh Xuân, Thành Phố Hà Nội, Việt Nam
+              </span>
+            </div>
+          </div>
+
+          <div class="bg-stone-800/90 border border-stone-700 p-4 rounded-2xl flex items-start gap-3">
+            <i data-lucide="phone" class="w-5 h-5 text-emerald-400 shrink-0 mt-0.5"></i>
+            <div>
+              <span class="text-[11px] uppercase tracking-wider text-stone-400 font-bold block">Hotline / Zalo Tư Vấn</span>
+              <a href="tel:+84939919106" class="text-base font-black text-amber-400 mt-1 block hover:underline">
+                +84 93 991 91 06
+              </a>
+              <span class="text-[11px] text-stone-400">(093 991 91 06 - Hỗ trợ 24/7)</span>
+            </div>
+          </div>
+
+          <div class="bg-stone-800/90 border border-stone-700 p-4 rounded-2xl flex items-start gap-3">
+            <i data-lucide="mail" class="w-5 h-5 text-amber-400 shrink-0 mt-0.5"></i>
+            <div>
+              <span class="text-[11px] uppercase tracking-wider text-stone-400 font-bold block">Email nhận bản vẽ</span>
+              <a href="mailto:nhachatdesign@gmail.com" class="text-xs font-bold text-white mt-1 block hover:text-amber-400">
+                nhachatdesign@gmail.com
+              </a>
+            </div>
+          </div>
+
+          <div class="bg-stone-800/90 border border-stone-700 p-4 rounded-2xl flex items-start gap-3">
+            <i data-lucide="message-circle" class="w-5 h-5 text-amber-400 shrink-0 mt-0.5"></i>
+            <div>
+              <span class="text-[11px] uppercase tracking-wider text-stone-400 font-bold block">Website & Fanpage</span>
+              <a href="https://qualityhome.com.vn" target="_blank" rel="noreferrer" class="text-xs font-bold text-white mt-1 block hover:text-amber-400">
+                qualityhome.com.vn
+              </a>
+              <span class="text-[11px] text-amber-400 block">NHÀ CHẤT - Kiến Trúc Nội Thất</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Khung Đặt Lịch Nhanh -->
+      <div class="lg:col-span-5 bg-white text-stone-900 rounded-2xl p-6 shadow-xl">
+        <h3 class="font-black text-lg text-stone-900 mb-1">
+          Nhận Tư Vấn & Báo Giá Trực Tiếp
+        </h3>
+        <p class="text-xs text-stone-500 mb-4">
+          Gửi yêu cầu trực tiếp qua Zalo <strong>093 991 91 06</strong> hoặc Email <strong>nhachatdesign@gmail.com</strong>.
+        </p>
+        <div class="space-y-3">
+          <button onclick="openConsultModal('Tôi muốn đặt lịch hẹn tư vấn trực tiếp tại văn phòng Số 15A, ngõ 214 Nguyễn Xiển, Hạ Đình, Thanh Xuân, Hà Nội.')" class="w-full bg-amber-500 hover:bg-amber-400 text-stone-950 font-black py-3.5 rounded-xl text-xs uppercase tracking-wider transition flex items-center justify-center gap-2 shadow-md">
+            <i data-lucide="calendar" class="w-4 h-4"></i> Đặt Lịch Hẹn Tại Văn Phòng Nguyễn Xiển
+          </button>
+          <a href="https://zalo.me/0939919106" target="_blank" rel="noreferrer" class="w-full bg-blue-600 hover:bg-blue-500 text-white font-bold py-3.5 rounded-xl text-xs uppercase tracking-wider transition flex items-center justify-center gap-2">
+            <i data-lucide="message-square" class="w-4 h-4"></i> Chat Zalo Ngay: 093 991 91 06
+          </a>
+          <a href="tel:+84939919106" class="w-full bg-stone-900 hover:bg-stone-800 text-white font-bold py-3.5 rounded-xl text-xs uppercase tracking-wider transition flex items-center justify-center gap-2">
+            <i data-lucide="phone" class="w-4 h-4 text-emerald-400"></i> Gọi Hotline: +84 93 991 91 06
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       10. FOOTER CHÍNH THỨC
+  ========================================== -->
+  <footer class="bg-stone-950 text-stone-400 pt-16 pb-28 border-t border-stone-800 mt-auto">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+      <div>
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-11 h-11 bg-amber-500 text-stone-950 flex flex-col items-center justify-center rounded-xl font-black leading-none">
+            <span class="text-xs">NHÀ</span>
+            <span class="text-[10px]">CHẤT</span>
+          </div>
+          <div>
+            <span class="block font-black text-white text-base leading-none">NHÀ CHẤT - Kiến Trúc Nội Thất</span>
+            <span class="block text-[10px] tracking-widest text-amber-400 mt-1">qualityhome.com.vn</span>
+          </div>
+        </div>
+        <p class="text-xs leading-relaxed text-stone-400 mb-4">
+          Đơn vị thiết kế, thi công kiến trúc & nội thất trọn gói uy tín tại Hà Nội với <strong>⭐ 100% đề xuất (11 lượt đánh giá)</strong>.
+        </p>
+        <div class="text-xs space-y-2 text-stone-300">
+          <div>Hotline/Zalo: <strong>+84 93 991 91 06 (093 991 91 06)</strong></div>
+          <div>Email: <strong>nhachatdesign@gmail.com</strong></div>
+          <div>Website: <strong>qualityhome.com.vn</strong></div>
+        </div>
+      </div>
+
+      <div>
+        <h4 class="text-white font-bold text-sm mb-4 uppercase tracking-wider">Dịch Vụ Của NHÀ CHẤT</h4>
+        <ul class="space-y-2.5 text-xs">
+          <li><a href="#projects" class="hover:text-amber-400">Thiết kế Kiến trúc Biệt thự & Nhà phố</a></li>
+          <li><a href="#projects" class="hover:text-amber-400">Thiết kế & Thi công Nội thất Gỗ Óc Chó</a></li>
+          <li><a href="#pricing" class="hover:text-amber-400">Xây nhà Trọn gói - Chìa khóa trao tay</a></li>
+          <li><a href="#projects" class="hover:text-amber-400">Thiết kế Homestay, Khách sạn & Văn phòng</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="text-white font-bold text-sm mb-4 uppercase tracking-wider">Ứng Dụng Xây Nhà Online</h4>
+        <ul class="space-y-2.5 text-xs">
+          <li><button onclick="switchUtilityTab('cost', true)" class="hover:text-amber-400">1. Tính chi phí xây dựng tự động</button></li>
+          <li><button onclick="switchUtilityTab('fengshui', true)" class="hover:text-amber-400">2. Xem tuổi làm nhà Phong thủy</button></li>
+          <li><button onclick="switchUtilityTab('loban', true)" class="hover:text-amber-400">3. Thước Lỗ Ban 52.2cm - 42.9cm - 38.8cm</button></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="text-white font-bold text-sm mb-4 uppercase tracking-wider">Địa Chỉ Văn Phòng</h4>
+        <p class="text-xs leading-relaxed text-stone-300 mb-4">
+          Số nhà 15A, ngõ 214 đường Nguyễn Xiển, Phường Hạ Đình, Quận Thanh Xuân, Thành Phố Hà Nội, Việt Nam
+        </p>
+        <button onclick="downloadThisHtmlFile()" class="w-full bg-stone-800 hover:bg-amber-500 hover:text-stone-950 text-amber-400 border border-amber-500/40 font-bold py-2.5 rounded-xl text-xs transition flex items-center justify-center gap-2">
+          <i data-lucide="download" class="w-4 h-4"></i> Tải File index.html Về Máy
+        </button>
+      </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 border-t border-stone-800/80 text-center text-xs text-stone-500">
+      © 2026 <strong>NHÀ CHẤT - Kiến Trúc Nội Thất</strong> (qualityhome.com.vn) • Số nhà 15A, ngõ 214 Nguyễn Xiển, Phường Hạ Đình, Quận Thanh Xuân, Hà Nội
+    </div>
+  </footer>
+
+  <!-- ==========================================
+       11. FLOATING ACTION BUTTONS (GỌI ĐIỆN, ZALO, MESSENGER)
+  ========================================== -->
+  <div class="fixed right-4 bottom-20 z-40 flex flex-col gap-2.5">
+    <a href="https://zalo.me/0939919106" target="_blank" rel="noreferrer" class="group flex items-center gap-2 bg-blue-600 hover:bg-blue-500 text-white px-3.5 py-2.5 rounded-full shadow-xl transition" title="Chat Zalo 093 991 91 06">
+      <i data-lucide="message-circle" class="w-5 h-5"></i>
+      <span class="text-xs font-bold hidden sm:inline">Zalo: 093 991 91 06</span>
+    </a>
+    <a href="https://m.me/" target="_blank" rel="noreferrer" onclick="openConsultModal('Tôi muốn nhắn tin qua Fanpage Messenger: NHÀ CHẤT - Kiến Trúc Nội Thất'); return false;" class="group flex items-center gap-2 bg-indigo-600 hover:bg-indigo-500 text-white px-3.5 py-2.5 rounded-full shadow-xl transition" title="NHÀ CHẤT - Kiến Trúc Nội Thất">
+      <i data-lucide="send" class="w-5 h-5"></i>
+      <span class="text-xs font-bold hidden sm:inline">Messenger Nhà Chất</span>
+    </a>
+    <a href="tel:+84939919106" class="group flex items-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white px-3.5 py-2.5 rounded-full shadow-xl transition" title="Gọi ngay +84 93 991 91 06">
+      <i data-lucide="phone-call" class="w-5 h-5"></i>
+      <span class="text-xs font-bold hidden sm:inline">Gọi: 093 991 91 06</span>
+    </a>
+  </div>
+
+  <!-- Thanh Dock Nhanh Dưới Đáy -->
+  <div class="fixed bottom-4 left-1/2 -translate-x-1/2 z-40 bg-stone-900/95 backdrop-blur-md text-white px-4 py-2 rounded-full shadow-2xl border border-stone-700 flex items-center gap-2 sm:gap-4">
+    <button onclick="switchUtilityTab('cost', true)" class="text-xs font-semibold text-stone-200 hover:text-amber-400 px-2 py-1 flex items-center gap-1 whitespace-nowrap">
+      <i data-lucide="calculator" class="w-3.5 h-3.5 text-amber-400"></i> Tính Giá Xây Nhà
+    </button>
+    <span class="text-stone-700">|</span>
+    <button onclick="switchUtilityTab('loban', true)" class="text-xs font-semibold text-stone-200 hover:text-amber-400 px-2 py-1 flex items-center gap-1 whitespace-nowrap">
+      <i data-lucide="ruler" class="w-3.5 h-3.5 text-emerald-400"></i> Thước Lỗ Ban
+    </button>
+    <span class="text-stone-700 hidden sm:inline">|</span>
+    <button onclick="openConsultModal('Tôi muốn nhận tư vấn phương án mặt bằng 2D miễn phí từ NHÀ CHẤT.')" class="bg-amber-500 hover:bg-amber-400 text-stone-950 text-xs font-black px-4 py-1.5 rounded-full transition whitespace-nowrap">
+      Nhận Mặt Bằng 2D
+    </button>
+  </div>
+
+  <!-- ==========================================
+       MODAL A: XEM CHI TIẾT DỰ ÁN
+  ========================================== -->
+  <div id="project-modal" class="fixed inset-0 z-50 hidden bg-stone-950/80 backdrop-blur-sm flex items-center justify-center p-4 overflow-y-auto">
+    <div class="bg-white rounded-3xl max-w-4xl w-full overflow-hidden shadow-2xl border border-stone-200 my-8">
+      <div class="relative h-72 sm:h-96 bg-stone-900">
+        <img id="modal-proj-img" src="" alt="" class="w-full h-full object-cover" />
+        <button onclick="closeProjectModal()" class="absolute top-4 right-4 w-10 h-10 rounded-full bg-stone-900/80 text-white flex items-center justify-center hover:bg-red-600 transition">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+        <div id="modal-proj-thumbs" class="absolute bottom-4 left-4 flex gap-2"></div>
+      </div>
+
+      <div class="p-6 sm:p-8">
+        <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+          <span id="modal-proj-badge" class="bg-amber-100 text-amber-800 text-xs font-bold px-3 py-1 rounded-full"></span>
+          <span id="modal-proj-cost" class="text-sm font-black text-emerald-700"></span>
+        </div>
+        <h3 id="modal-proj-title" class="text-2xl font-black text-stone-900 mb-3"></h3>
+        <p id="modal-proj-concept" class="text-sm text-stone-600 leading-relaxed mb-6"></p>
+
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 bg-stone-50 p-4 rounded-2xl border border-stone-200 mb-6 text-xs">
+          <div>
+            <span class="text-stone-400 block">Kích thước & DT đất</span>
+            <strong id="modal-proj-land" class="text-stone-900"></strong>
+          </div>
+          <div>
+            <span class="text-stone-400 block">Tổng sàn & Quy mô</span>
+            <strong id="modal-proj-floor" class="text-stone-900"></strong>
+          </div>
+          <div>
+            <span class="text-stone-400 block">Công năng chính</span>
+            <strong id="modal-proj-rooms" class="text-stone-900"></strong>
+          </div>
+          <div>
+            <span class="text-stone-400 block">Đơn vị thực hiện</span>
+            <strong id="modal-proj-arch" class="text-stone-900"></strong>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap justify-end gap-3">
+          <button onclick="closeProjectModal()" class="px-5 py-2.5 rounded-xl border border-stone-300 text-xs font-bold text-stone-700 hover:bg-stone-100">Đóng lại</button>
+          <button id="modal-proj-cta" class="bg-amber-600 hover:bg-amber-500 text-white px-6 py-2.5 rounded-xl text-xs font-bold shadow-md flex items-center gap-2">
+            Nhận Bản Vẽ & Báo Giá Mẫu Này
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       MODAL B: ĐỌC CHI TIẾT BÀI VIẾT CẨM NANG
+  ========================================== -->
+  <div id="article-modal" class="fixed inset-0 z-50 hidden bg-stone-950/80 backdrop-blur-sm flex items-center justify-center p-4 overflow-y-auto">
+    <div class="bg-white rounded-3xl max-w-3xl w-full overflow-hidden shadow-2xl border border-stone-200 my-8">
+      <div class="relative h-60 bg-stone-900">
+        <img id="modal-art-img" src="" alt="" class="w-full h-full object-cover" />
+        <button onclick="closeArticleModal()" class="absolute top-4 right-4 w-10 h-10 rounded-full bg-stone-900/80 text-white flex items-center justify-center hover:bg-red-600 transition">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+      <div class="p-6 sm:p-8">
+        <span id="modal-art-cat" class="bg-amber-100 text-amber-800 text-xs font-bold px-3 py-1 rounded-full"></span>
+        <h3 id="modal-art-title" class="text-2xl font-black text-stone-900 mt-3 mb-4"></h3>
+        <div id="modal-art-body" class="text-sm text-stone-700 leading-relaxed space-y-3 border-y border-stone-200 py-5 my-4"></div>
+        <div class="flex justify-between items-center">
+          <span class="text-xs text-stone-500">Biên soạn: Ban Chuyên Môn NHÀ CHẤT (qualityhome.com.vn)</span>
+          <button onclick="closeArticleModal()" class="bg-stone-900 text-white px-5 py-2 rounded-xl text-xs font-bold">Đóng bài viết</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       MODAL C: FORM ĐĂNG KÝ TƯ VẤN (GỬI ZALO / EMAIL)
+  ========================================== -->
+  <div id="consult-modal" class="fixed inset-0 z-50 hidden bg-stone-950/80 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 shadow-2xl border border-stone-200 relative">
+      <button onclick="closeConsultModal()" class="absolute top-5 right-5 w-8 h-8 rounded-full bg-stone-100 text-stone-600 flex items-center justify-center hover:bg-stone-200">
+        <i data-lucide="x" class="w-4 h-4"></i>
+      </button>
+
+      <div id="consult-form-box">
+        <span class="text-[11px] font-bold uppercase tracking-wider text-amber-700">NHÀ CHẤT - Kiến Trúc Nội Thất (093 991 91 06)</span>
+        <h3 class="text-xl font-black text-stone-900 mt-1 mb-4">Đăng Ký Nhận Phương Án Thiết Kế & Báo Giá</h3>
+
+        <form onsubmit="handleConsultSubmit(event)" class="space-y-4">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+            <div>
+              <label class="block text-xs font-bold text-stone-700 mb-1">Họ và tên Gia chủ *</label>
+              <input type="text" id="cf-name" required placeholder="VD: Anh Tuấn / Chị Hương" class="w-full px-3.5 py-2.5 rounded-xl border border-stone-300 text-xs focus:outline-none focus:border-amber-600" />
+            </div>
+            <div>
+              <label class="block text-xs font-bold text-stone-700 mb-1">Số điện thoại / Zalo *</label>
+              <input type="tel" id="cf-phone" required placeholder="VD: 0912 xxx xxx" class="w-full px-3.5 py-2.5 rounded-xl border border-stone-300 text-xs focus:outline-none focus:border-amber-600" />
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+            <div>
+              <label class="block text-xs font-bold text-stone-700 mb-1">Khu vực xây dựng</label>
+              <input type="text" id="cf-location" placeholder="VD: Thanh Xuân, Hà Nội..." class="w-full px-3.5 py-2.5 rounded-xl border border-stone-300 text-xs focus:outline-none focus:border-amber-600" />
+            </div>
+            <div>
+              <label class="block text-xs font-bold text-stone-700 mb-1">Ngân sách dự kiến</label>
+              <select id="cf-budget" class="w-full px-3.5 py-2.5 rounded-xl border border-stone-300 text-xs bg-white focus:outline-none focus:border-amber-600">
+                <option>Từ 1.5 - 2.5 Tỷ VNĐ</option>
+                <option selected>Từ 2.5 - 4.5 Tỷ VNĐ</option>
+                <option>Từ 4.5 - 8.0 Tỷ VNĐ</option>
+                <option>Trên 8.0 Tỷ VNĐ</option>
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold text-stone-700 mb-1">Nhu cầu chi tiết & Kích thước đất</label>
+            <textarea id="cf-note" rows="3" placeholder="Nhập diện tích đất, số tầng, công năng mong muốn..." class="w-full px-3.5 py-2.5 rounded-xl border border-stone-300 text-xs focus:outline-none focus:border-amber-600"></textarea>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 pt-2">
+            <button type="submit" class="bg-stone-900 hover:bg-amber-600 text-white font-black py-3 rounded-xl text-xs uppercase tracking-wider transition shadow-md">
+              Xác Nhận Đăng Ký
+            </button>
+            <button type="button" onclick="sendConsultViaEmail()" class="bg-amber-100 hover:bg-amber-200 text-amber-900 font-bold py-3 rounded-xl text-xs transition">
+              Gửi Qua Email Nhà Chất
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Thông báo thành công -->
+      <div id="consult-success-box" class="hidden text-center py-6 space-y-4">
+        <div class="w-14 h-14 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center mx-auto font-black text-2xl">✓</div>
+        <h3 class="text-xl font-black text-stone-900">Đã Ghi Nhận Thông Tin Tư Vấn!</h3>
+        <p id="consult-success-msg" class="text-xs text-stone-600 leading-relaxed max-w-sm mx-auto"></p>
+        <div class="flex flex-wrap justify-center gap-3 pt-2">
+          <a href="https://zalo.me/0939919106" target="_blank" rel="noreferrer" class="bg-blue-600 text-white px-5 py-2.5 rounded-xl text-xs font-bold">Mở Zalo 093 991 91 06</a>
+          <button onclick="closeConsultModal()" class="bg-stone-900 text-white px-5 py-2.5 rounded-xl text-xs font-bold">Hoàn Tất</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       JAVASCRIPT LOGIC (TOÀN BỘ THUẬT TOÁN TRONG 1 FILE)
+  ========================================== -->
+  <script>
+    // 1. DỮ LIỆU DỰ ÁN NHÀ CHẤT
+    const PROJECTS_DATA = [
+      {
+        id: 'NC-BT01',
+        title: 'The Sol Villa - Biệt Thự Hiện Đại Không Gian Mở & Hồ Koi',
+        category: 'Biệt thự',
+        location: 'Vinhomes Riverside, Hà Nội',
+        landArea: 280,
+        floorArea: 460,
+        floorsNum: 3,
+        floorsText: '3 Tầng 1 Tum',
+        cost: 6.2,
+        costText: '6.2 Tỷ',
+        year: 2026,
+        style: 'Modern Luxury',
+        status: 'Đã bàn giao',
+        thumbnail: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1000&q=80',
+        gallery: [
+          'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80',
+          'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80',
+          'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80'
+        ],
+        concept: 'Được thiết kế và thi công trọn gói bởi NHÀ CHẤT, công trình sử dụng hệ lam gỗ nhựa ngoài trời kết hợp khoảng thông tầng kính Low-E khổ lớn và hồ cá Koi điều hòa vi khí hậu.',
+        frontage: '14m x 20m',
+        bedrooms: '4 Phòng ngủ Master + Phòng Rượu + Phòng Thờ',
+        architect: 'KTS Chủ trì NHÀ CHẤT'
+      },
+      {
+        id: 'NC-NP02',
+        title: 'Thanh Xuân Louver House - Nhà Phố Thông Tầng Chắn Nắng Hướng Tây',
+        category: 'Nhà phố',
+        location: 'Thanh Xuân, Hà Nội',
+        landArea: 95,
+        floorArea: 340,
+        floorsNum: 4,
+        floorsText: '4 Tầng 1 Tum',
+        cost: 3.1,
+        costText: '3.1 Tỷ',
+        year: 2026,
+        style: 'Hiện đại Tối giản',
+        status: 'Công trình thực tế',
+        thumbnail: 'https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1000&q=80',
+        gallery: [
+          'https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1200&q=80',
+          'https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=1200&q=80'
+        ],
+        concept: 'Giải pháp hai lớp vỏ (Double Skin Facade) bằng gạch bông gió và ban công cây xanh của NHÀ CHẤT giúp giải quyết triệt để bài toán nắng gắt hướng Tây tại nội đô Hà Nội.',
+        frontage: '5m x 19m',
+        bedrooms: '4 Phòng ngủ, Gara 2 ô tô, Thang máy kính',
+        architect: 'Team Kiến Trúc NHÀ CHẤT'
+      },
+      {
+        id: 'NC-NT03',
+        title: 'Penthouse Nguyễn Xiển - Nội Thất Gỗ Óc Chó Bắc Mỹ & Đá Tự Nhiên',
+        category: 'Nội thất',
+        location: 'Nguyễn Xiển, Thanh Xuân, Hà Nội',
+        landArea: 185,
+        floorArea: 310,
+        floorsNum: 2,
+        floorsText: 'Duplex 2 Tầng',
+        cost: 1.85,
+        costText: '1.85 Tỷ',
+        year: 2026,
+        style: 'Bespoke Walnut Luxury',
+        status: 'Đã bàn giao',
+        thumbnail: 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1000&q=80',
+        gallery: [
+          'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=80',
+          'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1200&q=80'
+        ],
+        concept: 'Không gian nội thất may đo cao cấp sử dụng gỗ Óc chó Bắc Mỹ kết hợp đá Thạch anh xuyên sáng và hệ thống chiếu sáng thông minh tôn vinh vị thế gia chủ.',
+        frontage: 'Căn góc Panorama',
+        bedrooms: '3 Phòng ngủ Master + Phòng thay đồ Walk-in Closet',
+        architect: 'Team Nội Thất NHÀ CHẤT'
+      },
+      {
+        id: 'NC-BT04',
+        title: 'An Viên Retreat - Biệt Thự Nhà Vườn Mái Nhật Nghỉ Dưỡng',
+        category: 'Biệt thự',
+        location: 'Sóc Sơn, Hà Nội',
+        landArea: 480,
+        floorArea: 220,
+        floorsNum: 1,
+        floorsText: '1 Tầng (Villa Vườn)',
+        cost: 2.35,
+        costText: '2.35 Tỷ',
+        year: 2025,
+        style: 'Zen & Japandi',
+        status: 'Đã bàn giao',
+        thumbnail: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1000&q=80',
+        gallery: [
+          'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80',
+          'https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=1200&q=80'
+        ],
+        concept: 'Thiết kế trải dài theo phương ngang ôm trọn khu vườn tùng và hồ nước tĩnh lặng. Mọi không gian đều mở tầm nhìn 180 độ ra thiên nhiên.',
+        frontage: '20m x 24m',
+        bedrooms: '3 Phòng ngủ + Hiên trà đạo ngoài trời',
+        architect: 'KTS Chủ trì NHÀ CHẤT'
+      },
+      {
+        id: 'NC-NP05',
+        title: 'Cầu Giấy Townhouse - Nhà Phố Lệch Tầng Kết Hợp Văn Phòng',
+        category: 'Nhà phố',
+        location: 'Cầu Giấy, Hà Nội',
+        landArea: 75,
+        floorArea: 390,
+        floorsNum: 5,
+        floorsText: '5 Tầng 1 Tum',
+        cost: 3.4,
+        costText: '3.4 Tỷ',
+        year: 2025,
+        style: 'Modern Minimalist',
+        status: 'Công trình thực tế',
+        thumbnail: 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1000&q=80',
+        gallery: [
+          'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1200&q=80'
+        ],
+        concept: 'Giải pháp nhà phố đa năng vừa kinh doanh văn phòng tại tầng 1-2-3 vừa là căn hộ gia đình ấm cúng tại tầng 4-5-Tum với thang máy tách biệt.',
+        frontage: '5m x 15m',
+        bedrooms: '3 Phòng ngủ + 3 Sàn văn phòng cho thuê',
+        architect: 'Team Kiến Trúc NHÀ CHẤT'
+      },
+      {
+        id: 'NC-KS06',
+        title: 'La Vũ Boutique Hotel & Homestay - Tổ Hợp Lưu Trú Nghỉ Dưỡng',
+        category: 'Homestay - Khách sạn',
+        location: 'Tây Hồ, Hà Nội',
+        landArea: 210,
+        floorArea: 980,
+        floorsNum: 6,
+        floorsText: '6 Tầng + 1 Hầm + Rooftop',
+        cost: 8.5,
+        costText: '8.5 Tỷ',
+        year: 2026,
+        style: 'Tropical Indochine',
+        status: 'Đã bàn giao',
+        thumbnail: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1000&q=80',
+        gallery: [
+          'https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80',
+          'https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=1200&q=80'
+        ],
+        concept: 'Tối ưu hóa tỷ suất sinh lời trên từng m2 sàn với 18 phòng Suite view hồ, sảnh Cafe tầng 1 và bể bơi vô cực trên tầng thượng.',
+        frontage: '10.5m x 20m',
+        bedrooms: '18 Phòng Boutique Suite + Cafe Lounge',
+        architect: 'KTS Chủ trì NHÀ CHẤT'
+      }
+    ];
+
+    // 2. DỮ LIỆU CẨM NANG XÂY NHÀ
+    const HANDBOOK_DATA = [
+      {
+        id: 1,
+        category: 'Kinh nghiệm xây nhà',
+        title: '7 Bí quyết kiểm soát chi phí không phát sinh khi xây nhà trọn gói 2026',
+        date: '20/10/2026 • 6 phút đọc',
+        image: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=80',
+        excerpt: 'Tổng hợp các hạng mục dễ đội vốn nhất từ giai đoạn gia cố móng đến chọn vật tư hoàn thiện và cách khóa giá trong hợp đồng.',
+        content: `
+          <p><strong>1. Hoàn thiện hồ sơ thiết kế kỹ thuật 100% trước khi khởi công:</strong> Nguyên nhân lớn nhất gây phát sinh chi phí là vừa xây vừa sửa đổi công năng, đập phá tường hoặc thay đổi vị trí vệ sinh.</p>
+          <p><strong>2. Khảo sát địa chất để chốt phương án móng ngay từ đầu:</strong> Xác định rõ dùng móng đơn, móng băng hay ép cọc BTCT giúp dự toán chính xác ngân sách phần ngầm.</p>
+          <p><strong>3. Bảng phụ lục vật tư rõ mã hiệu, quy cách:</strong> Tại NHÀ CHẤT, hợp đồng luôn đính kèm bảng quy định rõ hãng thép, mác bê tông, mã gạch ốp lát, dòng sơn và thiết bị vệ sinh.</p>
+        `
+      },
+      {
+        id: 2,
+        category: 'Phong thủy kiến trúc',
+        title: 'Nguyên tắc bố trí Giếng trời, Cầu thang và Bếp chuẩn Phong thủy Dương trạch',
+        date: '14/10/2026 • 7 phút đọc',
+        image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80',
+        excerpt: 'Cách ứng dụng khí động học kết hợp la bàn phong thủy giúp nhà ống mặt tiền 4m-5m luôn tràn ngập sinh khí và tài lộc.',
+        content: `
+          <p><strong>1. Vị trí đặt Bếp "Tọa hung hướng cát":</strong> Tránh đặt bếp nấu đối diện trực tiếp cửa chính hoặc cửa phòng vệ sinh, đồng thời đảm bảo thông gió mùi hiệu quả.</p>
+          <p><strong>2. Số bậc cầu thang theo quy luật Sinh - Lão - Bệnh - Tử:</strong> Thiết kế tổng số bậc mỗi tầng rơi vào cung Sinh (4n + 1) như 17, 21, 25 bậc giúp bước chân êm ái và hợp phong thủy.</p>
+          <p><strong>3. Giếng trời trung tâm:</strong> Đóng vai trò là lá phổi điều hòa không khí và lấy sáng tự nhiên cho toàn bộ trục đứng ngôi nhà.</p>
+        `
+      },
+      {
+        id: 3,
+        category: 'Pháp lý - Thủ tục',
+        title: 'Hướng dẫn hồ sơ xin Giấy phép xây dựng và Hoàn công nhà ở tại Hà Nội',
+        date: '05/10/2026 • 5 phút đọc',
+        image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800&q=80',
+        excerpt: 'Quy định mới nhất về mật độ xây dựng, chiều cao tầng, độ vươn ban công và thời gian cấp phép xây dựng nhà ở riêng lẻ.',
+        content: `
+          <p><strong>1. Thành phần hồ sơ xin GPXD:</strong> Đơn đề nghị cấp phép, bản sao công chứng Sổ đỏ, và 02 bộ bản vẽ thiết kế kỹ thuật có dấu pháp nhân của đơn vị thiết kế có chứng chỉ năng lực như NHÀ CHẤT.</p>
+          <p><strong>2. Mật độ xây dựng tiêu chuẩn:</strong> Diện tích đất dưới 100m² được phép xây dựng từ 80% - 100% tùy quy hoạch chi tiết của từng quận tại Hà Nội.</p>
+          <p><strong>3. Thời gian cấp phép:</strong> Thông thường từ 15 ngày làm việc kể từ ngày nộp đủ hồ sơ hợp lệ.</p>
+        `
+      }
+    ];
+
+    // 3. DỮ LIỆU 3 THƯỚC LỖ BAN CHUẨN
+    const LOBAN_RULERS = [
+      {
+        id: '522',
+        name: 'Thước Lỗ Ban 52.2 cm',
+        subtitle: 'Dương Trạch Thông Thủy (Đo lọt sáng cửa đi, cửa sổ, giếng trời, chiều cao tầng)',
+        cycleMm: 522,
+        cungs: [
+          { name: 'Quý Nhân', good: true, desc: 'Gặp quý nhân phù trợ, gia đạo thịnh vượng, làm ăn phát đạt', sub: ['Quyền Lộc', 'Trung Tín', 'Tác Quan', 'Phát Đạt', 'Thông Minh'] },
+          { name: 'Hiểm Họa', good: false, desc: 'Tán tài lộc, trôi dạt, gia đạo bất hòa, cẩn thận kiện tụng', sub: ['Án Thành', 'Hỗn Nhân', 'Thất Hiếu', 'Tai Họa', 'Thường Bệnh'] },
+          { name: 'Thiên Tai', good: false, desc: 'Ốm đau bất ngờ, hao tài tốn của, kiêng dùng cho cửa chính', sub: ['Hoàn Tử', 'Quan Tài', 'Thân Tàn', 'Thất Tài', 'Hệ Quả'] },
+          { name: 'Thiên Tài', good: true, desc: 'Tài lộc trời ban, con cái hiếu thảo, quý nhân giúp đỡ', sub: ['Thi Thơ', 'Văn Học', 'Thanh Quý', 'Tác Lộc', 'Thiên Lộc'] },
+          { name: 'Nhân Lộc', good: true, desc: 'Phát triển sự nghiệp, con cháu đỗ đạt, gia đình sung túc', sub: ['Trí Tồn', 'Phú Quý', 'Tiến Bửu', 'Thập Thiện', 'Văn Chương'] },
+          { name: 'Cô Độc', good: false, desc: 'Hao người tốn của, bạc phận, chia ly, không thuận lợi', sub: ['Bạc Nghịch', 'Vô Vọng', 'Ly Tán', 'Tửu Thục', 'Dâm Dục'] },
+          { name: 'Thiên Tặc', good: false, desc: 'Bệnh tật bất ngờ, tai bay vạ gió, mất mát của cải', sub: ['Phong Bệnh', 'Chiêu Ôn', 'Ôn Tài', 'Ngục Tù', 'Quang Tài'] },
+          { name: 'Tể Tướng', good: true, desc: 'Hanh thông mọi mặt, sinh quý tử, vượng tài lộc quyền quý', sub: ['Đại Tài', 'Thi Thơ', 'Hoạch Tài', 'Hiếu Tử', 'Quý Nhân'] }
+        ]
+      },
+      {
+        id: '429',
+        name: 'Thước Lỗ Ban 42.9 cm',
+        subtitle: 'Dương Trạch Khối Xây Dựng (Đo phủ bì khối nhà, bệ bếp, bậc tam cấp, giường tủ)',
+        cycleMm: 429,
+        cungs: [
+          { name: 'Tài', good: true, desc: 'Tài đức song toàn, đón nhận tiền tài, phúc lộc dồi dào', sub: ['Tài Đức', 'Báo Khổ', 'Lục Hợp', 'Nghinh Phúc'] },
+          { name: 'Bệnh', good: false, desc: 'Hay ốm đau, kiện tụng, hao tổn nguyên khí gia đình', sub: ['Thoát Tài', 'Công Sự', 'Lao Chấp', 'Cô Quả'] },
+          { name: 'Ly', good: false, desc: 'Chia cắt tình cảm, thất thoát tiền bạc, làm ăn trắc trở', sub: ['Trưởng Khố', 'Kiếp Tài', 'Quan Quỷ', 'Thất Thoát'] },
+          { name: 'Nghĩa', good: true, desc: 'Đại cát đại lợi, sinh con hiếu thảo, vượng khí lâu bền', sub: ['Thêm Đinh', 'Ích Lợi', 'Quý Tử', 'Đại Cát'] },
+          { name: 'Quan', good: true, desc: 'Công danh thăng tiến, tài lộc bất ngờ, thuận buồm xuôi gió', sub: ['Thuận Khoa', 'Hoành Tài', 'Tiến Ích', 'Phú Quý'] },
+          { name: 'Kiếp', good: false, desc: 'Cướp bóc, tai ương, mất mát tài sản và sức khỏe', sub: ['Tử Biệt', 'Thoái Khẩu', 'Ly Hương', 'Tài Thất'] },
+          { name: 'Hại', good: false, desc: 'Tai họa ập đến, khẩu thiệt thị phi, bất hòa tranh chấp', sub: ['Tai Chí', 'Tử Tuyệt', 'Bệnh Lâm', 'Khẩu Thiệt'] },
+          { name: 'Bản', good: true, desc: 'Tiền tài tấn tới, giữ vững cơ nghiệp, vạn sự như ý', sub: ['Tài Chí', 'Đăng Khoa', 'Tiến Bảo', 'Hưng Vượng'] }
+        ]
+      },
+      {
+        id: '388',
+        name: 'Thước Lỗ Ban 38.8 cm',
+        subtitle: 'Âm Phần & Nội Thất Thờ Cúng (Đo bàn thờ, tủ thờ, khung tranh, sập thờ)',
+        cycleMm: 388,
+        cungs: [
+          { name: 'Đinh', good: true, desc: 'Phúc tinh chiếu mệnh, đỗ đạt công danh, tiền tài vượng phát', sub: ['Phúc Tinh', 'Cập Đệ', 'Tài Vượng', 'Đăng Khoa'] },
+          { name: 'Hại', good: false, desc: 'Khẩu thiệt thị phi, bệnh tật, suy bại gia phong', sub: ['Khẩu Thiệt', 'Bệnh Lâm', 'Tử Tuyệt', 'Tai Chí'] },
+          { name: 'Vượng', good: true, desc: 'Thiên đức, hỷ sự lâm môn, thêm phúc thêm lộc', sub: ['Thiên Đức', 'Hỷ Sự', 'Tiến Bảo', 'Thêm Phúc'] },
+          { name: 'Khổ', good: false, desc: 'Thất thoát tài sản, tranh chấp quan sự, cô quả', sub: ['Thất Thoát', 'Quan Quỷ', 'Kiếp Tài', 'Vô Tự'] },
+          { name: 'Nghĩa', good: true, desc: 'Đại cát, tài lộc dồi dào, con cháu sum vầy thịnh vượng', sub: ['Đại Cát', 'Tài Vượng', 'Ích Lợi', 'Thiên Khố'] },
+          { name: 'Quan', good: true, desc: 'Phú quý vinh hoa, tiến bảo, hoành tài, thuận lợi', sub: ['Phú Quý', 'Tiến Bảo', 'Hoành Tài', 'Thuận Khoa'] },
+          { name: 'Tử', good: false, desc: 'Ly hương, tử biệt, thoái đinh, thất tài (Rất xấu)', sub: ['Ly Hương', 'Tử Biệt', 'Thoái Đinh', 'Thất Tài'] },
+          { name: 'Hưng', good: true, desc: 'Đăng khoa, quý tử, thêm đinh, hưng vượng gia tộc', sub: ['Đăng Khoa', 'Quý Tử', 'Thêm Đinh', 'Hưng Vượng'] },
+          { name: 'Thất', good: false, desc: 'Cô quả, lao chấp, công sự, thoát tài', sub: ['Cô Quả', 'Lao Chấp', 'Công Sự', 'Thoát Tài'] },
+          { name: 'Tài', good: true, desc: 'Nghinh phúc, lục hợp, tiến bảo, tài đức vẹn toàn', sub: ['Nghinh Phúc', 'Lục Hợp', 'Tiến Bảo', 'Tài Đức'] }
+        ]
+      }
+    ];
+
+    let currentProjectCategory = 'Tất cả';
+    let lastCalculatedSummary = '';
+
+    function formatVND(num) {
+      return new Intl.NumberFormat('vi-VN').format(Math.round(num)) + ' đ';
+    }
+
+    // HIỂN THỊ & LỌC DỰ ÁN
+    function setProjectCategory(cat) {
+      currentProjectCategory = cat;
+      document.querySelectorAll('.cat-btn').forEach(btn => {
+        if (btn.getAttribute('data-cat') === cat) {
+          btn.className = 'cat-btn px-4 py-2 rounded-xl text-xs font-bold transition bg-stone-900 text-amber-400 shadow-sm';
+        } else {
+          btn.className = 'cat-btn px-4 py-2 rounded-xl text-xs font-bold transition bg-stone-100 text-stone-700 hover:bg-stone-200';
+        }
+      });
+      renderProjects();
+    }
+
+    function renderProjects() {
+      const floorsFilter = document.getElementById('filter-floors').value;
+      const areaFilter = document.getElementById('filter-area').value;
+      const budgetFilter = document.getElementById('filter-budget').value;
+      const searchQ = document.getElementById('filter-search').value.toLowerCase().trim();
+
+      const filtered = PROJECTS_DATA.filter(p => {
+        const matchCat = currentProjectCategory === 'Tất cả' || p.category === currentProjectCategory;
+        const matchSearch = !searchQ || p.title.toLowerCase().includes(searchQ) || p.location.toLowerCase().includes(searchQ) || p.id.toLowerCase().includes(searchQ) || p.style.toLowerCase().includes(searchQ);
+
+        let matchFloors = true;
+        if (floorsFilter === '1-2') matchFloors = p.floorsNum <= 2;
+        if (floorsFilter === '3-4') matchFloors = p.floorsNum >= 3 && p.floorsNum <= 4;
+        if (floorsFilter === '5+') matchFloors = p.floorsNum >= 5;
+
+        let matchArea = true;
+        if (areaFilter === 'UNDER_100') matchArea = p.landArea < 100;
+        if (areaFilter === '100_250') matchArea = p.landArea >= 100 && p.landArea <= 250;
+        if (areaFilter === 'OVER_250') matchArea = p.landArea > 250;
+
+        let matchBudget = true;
+        if (budgetFilter === 'UNDER_2.5') matchBudget = p.cost <= 2.5;
+        if (budgetFilter === '2.5_TO_5') matchBudget = p.cost > 2.5 && p.cost <= 5.0;
+        if (budgetFilter === 'OVER_5') matchBudget = p.cost > 5.0;
+
+        return matchCat && matchSearch && matchFloors && matchArea && matchBudget;
+      });
+
+      document.getElementById('project-count-label').textContent = `Hiển thị ${filtered.length} công trình`;
+
+      const grid = document.getElementById('projects-grid');
+      if (filtered.length === 0) {
+        grid.innerHTML = `<div class="col-span-full bg-white p-10 rounded-2xl text-center border border-stone-200 text-sm text-stone-500">Không tìm thấy công trình phù hợp với bộ lọc hiện tại. Hãy thử chọn tiêu chí khác.</div>`;
+        return;
+      }
+
+      grid.innerHTML = filtered.map(p => `
+        <div onclick="openProjectModal('${p.id}')" class="group bg-white rounded-2xl overflow-hidden border border-stone-200/90 shadow-sm hover:shadow-xl transition-all duration-300 cursor-pointer flex flex-col">
+          <div class="relative h-64 overflow-hidden bg-stone-200">
+            <img src="${p.thumbnail}" alt="${p.title}" onerror="this.src='https://placehold.co/800x600/1c1917/f59e0b?text=NHA+CHAT'" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+            <div class="absolute inset-0 bg-gradient-to-t from-stone-950/80 via-transparent to-transparent"></div>
+            <div class="absolute top-3 left-3 flex items-center gap-2">
+              <span class="bg-stone-900/90 text-amber-400 text-[11px] font-bold px-3 py-1 rounded-full">${p.category}</span>
+              <span class="bg-emerald-600/90 text-white text-[11px] font-semibold px-2.5 py-1 rounded-full">${p.status}</span>
+            </div>
+            <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-white">
+              <span class="text-xs font-medium text-stone-200">📍 ${p.location}</span>
+              <span class="bg-amber-500 text-stone-950 font-black text-xs px-2.5 py-1 rounded-md">~${p.costText}</span>
+            </div>
+          </div>
+
+          <div class="p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between text-[11px] text-stone-500 font-semibold mb-1.5">
+                <span>Mã DA: ${p.id}</span>
+                <span>Phong cách: ${p.style}</span>
+              </div>
+              <h3 class="font-bold text-lg text-stone-900 group-hover:text-amber-700 transition">${p.title}</h3>
+              <p class="text-xs text-stone-600 mt-2 leading-relaxed">${p.concept}</p>
+            </div>
+
+            <div class="grid grid-cols-3 gap-2 pt-4 mt-4 border-t border-stone-100 text-center">
+              <div class="bg-stone-50 p-2 rounded-lg">
+                <span class="block text-[10px] text-stone-500">Diện tích đất</span>
+                <span class="font-bold text-xs text-stone-900">${p.landArea} m²</span>
+              </div>
+              <div class="bg-stone-50 p-2 rounded-lg">
+                <span class="block text-[10px] text-stone-500">Tổng sàn XD</span>
+                <span class="font-bold text-xs text-stone-900">${p.floorArea} m²</span>
+              </div>
+              <div class="bg-stone-50 p-2 rounded-lg">
+                <span class="block text-[10px] text-stone-500">Quy mô</span>
+                <span class="font-bold text-xs text-stone-900">${p.floorsText}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function openProjectModal(projectId) {
+      const p = PROJECTS_DATA.find(item => item.id === projectId);
+      if (!p) return;
+
+      document.getElementById('modal-proj-img').src = p.gallery[0] || p.thumbnail;
+      document.getElementById('modal-proj-badge').textContent = `${p.category} • Mã dự án: ${p.id}`;
+      document.getElementById('modal-proj-cost').textContent = `Tổng mức đầu tư: ~${p.costText} (${p.year})`;
+      document.getElementById('modal-proj-title').textContent = p.title;
+      document.getElementById('modal-proj-concept').textContent = p.concept;
+      document.getElementById('modal-proj-land').textContent = `${p.frontage} (${p.landArea} m²)`;
+      document.getElementById('modal-proj-floor').textContent = `${p.floorArea} m² (${p.floorsText})`;
+      document.getElementById('modal-proj-rooms').textContent = p.bedrooms;
+      document.getElementById('modal-proj-arch').textContent = p.architect;
+
+      const thumbsBox = document.getElementById('modal-proj-thumbs');
+      thumbsBox.innerHTML = p.gallery.map((imgUrl) => `
+        <button onclick="document.getElementById('modal-proj-img').src='${imgUrl}'" class="w-16 h-12 rounded-lg overflow-hidden border-2 border-amber-400">
+          <img src="${imgUrl}" alt="" class="w-full h-full object-cover" />
+        </button>
+      `).join('');
+
+      document.getElementById('modal-proj-cta').onclick = function() {
+        closeProjectModal();
+        openConsultModal(`Tôi quan tâm đến mẫu dự án ${p.id} - ${p.title} (~${p.costText}). Tư vấn giúp tôi phương án tương tự.`);
+      };
+
+      document.getElementById('project-modal').classList.remove('hidden');
+    }
+
+    function closeProjectModal() {
+      document.getElementById('project-modal').classList.add('hidden');
+    }
+
+    // CHUYỂN TAB 3 ỨNG DỤNG TIỆN ÍCH
+    function switchUtilityTab(tabName, shouldScroll) {
+      ['cost', 'fengshui', 'loban'].forEach(t => {
+        const panel = document.getElementById(`utility-panel-${t}`);
+        const btn = document.getElementById(`tab-btn-${t}`);
+        if (t === tabName) {
+          panel.classList.remove('hidden');
+          btn.className = 'flex items-center gap-2.5 px-6 py-3.5 rounded-xl font-bold text-sm transition bg-amber-500 text-stone-950 shadow-lg shadow-amber-500/25';
+        } else {
+          panel.classList.add('hidden');
+          btn.className = 'flex items-center gap-2.5 px-6 py-3.5 rounded-xl font-bold text-sm transition bg-stone-800 text-stone-300 hover:bg-stone-700';
+        }
+      });
+
+      if (shouldScroll) {
+        document.getElementById('utilities').scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    // THUẬT TOÁN ỨNG DỤNG 1: TÍNH CHI PHÍ XÂY DỰNG
+    function calculateConstructionCost() {
+      const type = document.querySelector('input[name="calc-type"]:checked').value;
+      const width = parseFloat(document.getElementById('calc-width').value) || 5;
+      const length = parseFloat(document.getElementById('calc-length').value) || 20;
+      const floors = parseInt(document.getElementById('calc-floors').value) || 3;
+      const foundation = document.getElementById('calc-foundation').value;
+      const extra = document.getElementById('calc-extra').value;
+      const roof = document.getElementById('calc-roof').value;
+      const pkg = document.querySelector('input[name="calc-package"]:checked').value;
+
+      const baseArea = Math.round(width * length);
+
+      const foundMap = {
+        mongdon: { rate: 0.35, label: 'Móng đơn (35% DT)' },
+        mongbang: { rate: 0.55, label: 'Móng băng (55% DT)' },
+        mongcoc: { rate: 0.45, label: 'Móng đài cọc (45% DT)' }
+      }[foundation];
+
+      const extraMap = {
+        tum: { rate: 0.35, label: '+ 1 Tum thang' },
+        none: { rate: 0, label: 'Không Hầm/Tum' },
+        banham: { rate: 1.5, label: '+ Bán hầm (150%)' },
+        ham: { rate: 1.85, label: '+ Hầm & Tum (185%)' }
+      }[extra];
+
+      const roofMap = {
+        btct: { rate: 0.5, label: 'Mái BTCT (50% DT)' },
+        mainhat: { rate: 0.7, label: 'Mái Nhật/Thái (70% DT)' },
+        maiton: { rate: 0.3, label: 'Mái Tôn (30% DT)' }
+      }[roof];
+
+      const foundArea = Math.round(baseArea * foundMap.rate);
+      const bodyArea = Math.round(baseArea * (floors + extraMap.rate));
+      const roofArea = Math.round(baseArea * roofMap.rate);
+      const totalArea = foundArea + bodyArea + roofArea;
+
+      const typeMult = { nhapho: 1.0, bietthu: 1.18, cap4: 0.92 }[type];
+      const baseRate = { xaytho: 3850000, tieuchuan: 6350000, caocap: 7900000 }[pkg];
+      const unitPrice = Math.round(baseRate * typeMult);
+
+      const foundCost = foundArea * unitPrice;
+      const bodyCost = bodyArea * unitPrice;
+      const roofCost = roofArea * unitPrice;
+      const totalCost = foundCost + bodyCost + roofCost;
+      const designVal = totalArea * 180000;
+
+      document.getElementById('res-land-title').textContent = `Đất ${width}m x ${length}m (${baseArea} m²)`;
+      document.getElementById('res-total-area-badge').textContent = `Tổng sàn: ${totalArea} m²`;
+      document.getElementById('res-found-label').textContent = `1. Phần Móng (${foundMap.label})`;
+      document.getElementById('res-found-area').textContent = `Quy đổi: ${foundArea} m²`;
+      document.getElementById('res-found-cost').textContent = formatVND(foundCost);
+
+      document.getElementById('res-body-label').textContent = `2. Phần Thân (${floors} tầng ${extraMap.label})`;
+      document.getElementById('res-body-area').textContent = `Quy đổi: ${bodyArea} m²`;
+      document.getElementById('res-body-cost').textContent = formatVND(bodyCost);
+
+      document.getElementById('res-roof-label').textContent = `3. Phần Mái (${roofMap.label})`;
+      document.getElementById('res-roof-area').textContent = `Quy đổi: ${roofArea} m²`;
+      document.getElementById('res-roof-cost').textContent = formatVND(roofCost);
+
+      document.getElementById('res-design-val').textContent = `Trị giá: ${formatVND(designVal)}`;
+      document.getElementById('res-unit-price').textContent = `Đơn giá TB: ${formatVND(unitPrice)}/m²`;
+      document.getElementById('res-total-cost').textContent = formatVND(totalCost);
+
+      lastCalculatedSummary = `Dự toán từ web NHÀ CHẤT: Đất ${width}x${length}m (${baseArea}m2), quy mô ${floors} tầng (${extraMap.label}), tổng diện tích quy đổi ${totalArea}m2, dự kiến ${formatVND(totalCost)}.`;
+    }
+
+    function requestCostQuote() {
+      openConsultModal(lastCalculatedSummary + ' Tôi muốn nhận bảng bóc tách vật tư chi tiết.');
+    }
+
+    // THUẬT TOÁN ỨNG DỤNG 2: XEM TUỔI LÀM NHÀ PHONG THỦY
+    const CAN_LIST = ['Canh', 'Tân', 'Nhâm', 'Quý', 'Giáp', 'Ất', 'Bính', 'Đinh', 'Mậu', 'Kỷ'];
+    const CHI_LIST = ['Thân', 'Dậu', 'Tuất', 'Hợi', 'Tý', 'Sửu', 'Dần', 'Mão', 'Thìn', 'Tỵ', 'Ngọ', 'Mùi'];
+
+    function evaluateFengShui() {
+      const birthYear = parseInt(document.getElementById('fs-birth-year').value) || 1990;
+      const buildYear = parseInt(document.getElementById('fs-build-year').value) || 2026;
+      const ageMu = buildYear - birthYear + 1;
+
+      const canBirth = CAN_LIST[birthYear % 10];
+      const chiBirth = CHI_LIST[birthYear % 12];
+      const canBuild = CAN_LIST[buildYear % 10];
+      const chiBuild = CHI_LIST[buildYear % 12];
+
+      const tamTaiGroups = [
+        { owners: ['Thân', 'Tý', 'Thìn'], badYears: ['Dần', 'Mão', 'Thìn'] },
+        { owners: ['Dần', 'Ngọ', 'Tuất'], badYears: ['Thân', 'Dậu', 'Tuất'] },
+        { owners: ['Tỵ', 'Dậu', 'Sửu'], badYears: ['Hợi', 'Tý', 'Sửu'] },
+        { owners: ['Hợi', 'Mão', 'Mùi'], badYears: ['Tỵ', 'Ngọ', 'Mùi'] }
+      ];
+      const foundGroup = tamTaiGroups.find(g => g.owners.includes(chiBirth));
+      const isTamTai = foundGroup ? foundGroup.badYears.includes(chiBuild) : false;
+
+      const kimLauRem = ageMu % 9;
+      const kimLauMap = {
+        1: 'Phạm Kim Lâu Thân (Gây bất lợi cho chính bản thân gia chủ)',
+        3: 'Phạm Kim Lâu Thê (Gây bất trắc cho người phối ngẫu)',
+        6: 'Phạm Kim Lâu Tử (Gây khó khăn cho con cái)',
+        8: 'Phạm Kim Lâu Súc (Ảnh hưởng tài chính, vật nuôi kinh tế)'
+      };
+      const isKimLau = [1, 3, 6, 8].includes(kimLauRem);
+      const kimLauText = isKimLau ? kimLauMap[kimLauRem] : 'Không phạm Kim Lâu (Tốt)';
+
+      const tens = Math.floor(ageMu / 10);
+      const units = ageMu % 10;
+      const hoangOcIdx = ((tens + units - 1) % 6) + 1;
+      const hoangOcMap = {
+        1: { name: 'Nhất Cát (Tốt)', good: true, desc: 'Làm nhà tuổi này sẽ có chốn an cư tốt, mọi việc hanh thông.' },
+        2: { name: 'Nhì Nghi (Tốt)', good: true, desc: 'Làm nhà tuổi này nhà cửa hưng vượng, giàu có phát đạt.' },
+        3: { name: 'Tam Địa Sát (Xấu)', good: false, desc: 'Phạm Tam Địa Sát, gia chủ dễ gặp vấn đề về sức khỏe.' },
+        4: { name: 'Tứ Tấn Tài (Tốt)', good: true, desc: 'Làm nhà tuổi này phúc lộc sẽ tới, làm ăn thịnh vượng.' },
+        5: { name: 'Ngũ Thọ Tử (Xấu)', good: false, desc: 'Phạm Ngũ Thọ Tử, gia đạo dễ bất hòa, chia rẽ.' },
+        6: { name: 'Lục Hoang Ốc (Xấu)', good: false, desc: 'Phạm Lục Hoang Ốc, công việc trắc trở, hao tài tốn của.' }
+      };
+      const hoangOcInfo = hoangOcMap[hoangOcIdx] || hoangOcMap[1];
+      const isHoangOc = !hoangOcInfo.good;
+
+      const overallGood = !isTamTai && !isKimLau && !isHoangOc;
+
+      document.getElementById('fs-summary-age').textContent = `${ageMu} Tuổi (${canBirth} ${chiBirth})`;
+      document.getElementById('fs-summary-build').textContent = `${buildYear} - Năm ${canBuild} ${chiBuild}`;
+
+      const badge = document.getElementById('fs-summary-badge');
+      if (overallGood) {
+        badge.className = 'bg-emerald-500 text-stone-950 font-black text-xs px-3 py-1 rounded-full';
+        badge.textContent = '✓ ĐẠI CÁT - ĐƯỢC TUỔI LÀM NHÀ';
+      } else {
+        badge.className = 'bg-amber-500 text-stone-950 font-black text-xs px-3 py-1 rounded-full';
+        badge.textContent = '⚠ NÊN MƯỢN TUỔI ĐỘNG THỔ';
+      }
+
+      document.getElementById('fs-details-container').innerHTML = `
+        <div class="p-4 rounded-2xl border ${!isTamTai ? 'bg-emerald-50/70 border-emerald-200' : 'bg-red-50/70 border-red-200'}">
+          <div class="flex items-center justify-between">
+            <span class="font-bold text-sm text-stone-900">1. Hạn Tam Tai</span>
+            <span class="text-xs font-bold px-2.5 py-0.5 rounded ${!isTamTai ? 'bg-emerald-600 text-white' : 'bg-red-600 text-white'}">
+              ${!isTamTai ? 'Không phạm Tam Tai (Tốt)' : 'Phạm Tam Tai'}
+            </span>
+          </div>
+          <p class="text-xs text-stone-600 mt-1.5">Tuổi <strong>${canBirth} ${chiBirth}</strong> kỵ các năm Tam Tai: <strong>${foundGroup ? foundGroup.badYears.join(', ') : ''}</strong>. Năm ${buildYear} là năm ${canBuild} ${chiBuild}.</p>
+        </div>
+
+        <div class="p-4 rounded-2xl border ${!isKimLau ? 'bg-emerald-50/70 border-emerald-200' : 'bg-red-50/70 border-red-200'}">
+          <div class="flex items-center justify-between">
+            <span class="font-bold text-sm text-stone-900">2. Hạn Kim Lâu</span>
+            <span class="text-xs font-bold px-2.5 py-0.5 rounded ${!isKimLau ? 'bg-emerald-600 text-white' : 'bg-red-600 text-white'}">
+              ${kimLauText}
+            </span>
+          </div>
+          <p class="text-xs text-stone-600 mt-1.5">Tuổi mụ ${ageMu} chia 9 dư ${ageMu % 9 || 9}. (Theo cổ thư, số dư 1, 3, 6, 8 phạm Kim Lâu).</p>
+        </div>
+
+        <div class="p-4 rounded-2xl border ${!isHoangOc ? 'bg-emerald-50/70 border-emerald-200' : 'bg-red-50/70 border-red-200'}">
+          <div class="flex items-center justify-between">
+            <span class="font-bold text-sm text-stone-900">3. Hạn Hoang Ốc</span>
+            <span class="text-xs font-bold px-2.5 py-0.5 rounded ${!isHoangOc ? 'bg-emerald-600 text-white' : 'bg-red-600 text-white'}">
+              Cung ${hoangOcInfo.name}
+            </span>
+          </div>
+          <p class="text-xs text-stone-600 mt-1.5">${hoangOcInfo.desc}</p>
+        </div>
+      `;
+
+      // Tìm các năm sinh Đại Cát để mượn tuổi trong năm buildYear
+      const goodBorrow = [];
+      for (let y = buildYear - 68; y <= buildYear - 22; y++) {
+        const a = buildYear - y + 1;
+        const cB = CHI_LIST[y % 12];
+        const g = tamTaiGroups.find(gr => gr.owners.includes(cB));
+        const tt = g ? g.badYears.includes(chiBuild) : false;
+        const kl = [1, 3, 6, 8].includes(a % 9);
+        const hoIdx = ((Math.floor(a / 10) + (a % 10) - 1) % 6) + 1;
+        const ho = ![1, 2, 4].includes(hoIdx);
+        if (!tt && !kl && !ho) {
+          goodBorrow.push({ year: y, canChi: `${CAN_LIST[y % 10]} ${cB}`, age: a });
+        }
+      }
+
+      document.getElementById('fs-borrow-title').textContent = `Danh sách các năm sinh Đại Cát để Mượn Tuổi Động Thổ năm ${buildYear}:`;
+      document.getElementById('fs-borrow-list').innerHTML = goodBorrow.slice(-6).reverse().map(item => `
+        <span class="bg-white border border-amber-300 text-stone-900 px-3 py-1.5 rounded-lg text-xs font-bold shadow-sm">
+          Sinh năm ${item.year} (${item.canChi} - ${item.age} tuổi)
+        </span>
+      `).join('');
+    }
+
+    // THUẬT TOÁN ỨNG DỤNG 3: THƯỚC LỖ BAN 3 THƯỚC CHUẨN
+    function syncLobanValue(val) {
+      const mmVal = Math.max(10, Math.min(10000, parseInt(val) || 1260));
+      document.getElementById('loban-mm-input').value = mmVal;
+      document.getElementById('loban-range-slider').value = Math.min(3600, mmVal);
+      document.getElementById('loban-cm-label').textContent = `(${(mmVal / 10).toFixed(1)} cm)`;
+      document.getElementById('loban-slider-status').textContent = `Đang đo: ${mmVal} mm (${(mmVal / 1000).toFixed(3)} mét)`;
+
+      const container = document.getElementById('loban-rulers-container');
+      container.innerHTML = LOBAN_RULERS.map(ruler => {
+        const posInCycle = mmVal % ruler.cycleMm;
+        const cungSize = ruler.cycleMm / ruler.cungs.length;
+        const cungIdx = Math.min(ruler.cungs.length - 1, Math.floor(posInCycle / cungSize));
+        const currentCung = ruler.cungs[cungIdx];
+
+        const posInCung = posInCycle - cungIdx * cungSize;
+        const subSize = cungSize / currentCung.sub.length;
+        const subIdx = Math.min(currentCung.sub.length - 1, Math.floor(posInCung / subSize));
+        const currentSub = currentCung.sub[subIdx];
+        const percentInCycle = (posInCycle / ruler.cycleMm) * 100;
+
+        return `
+          <div class="border border-stone-200 rounded-2xl overflow-hidden shadow-sm">
+            <div class="bg-stone-100 px-5 py-3 flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-stone-200">
+              <div>
+                <span class="font-black text-sm text-stone-900">${ruler.name}</span>
+                <span class="text-xs text-stone-600 sm:ml-2 block sm:inline">• ${ruler.subtitle}</span>
+              </div>
+              <span class="px-3 py-1 rounded-full text-xs font-black uppercase tracking-wider ${currentCung.good ? 'bg-red-600 text-white' : 'bg-stone-900 text-stone-300'}">
+                Cung ${currentCung.name} - ${currentSub} (${currentCung.good ? 'ĐỎ - ĐẠI CÁT' : 'ĐEN - XẤU'})
+              </span>
+            </div>
+
+            <div class="p-5 bg-white">
+              <div class="relative h-16 rounded-xl overflow-hidden flex border border-stone-300">
+                ${ruler.cungs.map(c => `
+                  <div style="width: ${100 / ruler.cungs.length}%" class="h-full flex flex-col items-center justify-center border-r last:border-r-0 border-white/30 text-center px-1 ${c.good ? 'bg-red-600 text-white' : 'bg-stone-800 text-stone-300'}">
+                    <span class="font-black text-xs sm:text-sm leading-tight">${c.name}</span>
+                    <span class="text-[9px] opacity-80 hidden md:inline mt-0.5">${c.good ? 'Cát' : 'Hung'}</span>
+                  </div>
+                `).join('')}
+
+                <div style="left: ${percentInCycle}%" class="absolute top-0 bottom-0 w-1 bg-amber-300 shadow-[0_0_12px_rgba(251,191,36,1)] z-10">
+                  <div class="w-4 h-4 bg-amber-400 border-2 border-stone-950 rounded-full -ml-1.5 -mt-1"></div>
+                </div>
+              </div>
+
+              <div class="mt-3 flex flex-col sm:flex-row sm:items-center justify-between text-xs gap-2 text-stone-600">
+                <div>
+                  <strong class="${currentCung.good ? 'text-red-600' : 'text-stone-900'}">
+                    Ý nghĩa tại ${mmVal}mm (Cung ${currentCung.name} - Khoảng ${currentSub}):
+                  </strong> ${currentCung.desc}.
+                </div>
+                <span class="text-[11px] text-stone-400 shrink-0">Chu kỳ thước: ${ruler.cycleMm} mm</span>
+              </div>
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    // HIỂN THỊ CẨM NANG & MODAL BÀI VIẾT
+    function renderHandbook() {
+      const grid = document.getElementById('handbook-grid');
+      grid.innerHTML = HANDBOOK_DATA.map(art => `
+        <article onclick="openArticleModal(${art.id})" class="bg-white rounded-2xl overflow-hidden border border-stone-200 shadow-sm hover:shadow-lg transition cursor-pointer flex flex-col">
+          <div class="h-48 overflow-hidden relative">
+            <img src="${art.image}" alt="${art.title}" class="w-full h-full object-cover hover:scale-105 transition duration-500" />
+            <span class="absolute top-3 left-3 bg-stone-900/90 text-amber-400 text-[11px] font-bold px-3 py-1 rounded-full">${art.category}</span>
+          </div>
+          <div class="p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="text-[11px] text-stone-400 font-medium mb-1.5">${art.date}</div>
+              <h3 class="font-bold text-base text-stone-900 hover:text-amber-700 transition">${art.title}</h3>
+              <p class="text-xs text-stone-600 mt-2 leading-relaxed">${art.excerpt}</p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-stone-100 flex items-center text-xs font-bold text-amber-700">
+              <span>Đọc chi tiết cẩm nang</span>
+            </div>
+          </div>
+        </article>
+      `).join('');
+    }
+
+    function openArticleModal(id) {
+      const art = HANDBOOK_DATA.find(a => a.id === id);
+      if (!art) return;
+      document.getElementById('modal-art-img').src = art.image;
+      document.getElementById('modal-art-cat').textContent = `${art.category} • ${art.date}`;
+      document.getElementById('modal-art-title').textContent = art.title;
+      document.getElementById('modal-art-body').innerHTML = art.content;
+      document.getElementById('article-modal').classList.remove('hidden');
+    }
+
+    function closeArticleModal() {
+      document.getElementById('article-modal').classList.add('hidden');
+    }
+
+    // MODAL ĐĂNG KÝ TƯ VẤN
+    function openConsultModal(noteText) {
+      document.getElementById('cf-note').value = noteText || '';
+      document.getElementById('consult-form-box').classList.remove('hidden');
+      document.getElementById('consult-success-box').classList.add('hidden');
+      document.getElementById('consult-modal').classList.remove('hidden');
+    }
+
+    function closeConsultModal() {
+      document.getElementById('consult-modal').classList.add('hidden');
+    }
+
+    function handleConsultSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('cf-name').value;
+      const phone = document.getElementById('cf-phone').value;
+      document.getElementById('consult-form-box').classList.add('hidden');
+      document.getElementById('consult-success-box').classList.remove('hidden');
+      document.getElementById('consult-success-msg').innerHTML = `Cảm ơn <strong>${name}</strong> (${phone}). Đội ngũ Kiến trúc sư <strong>NHÀ CHẤT</strong> sẽ liên hệ với bạn qua số Hotline/Zalo <strong>093 991 91 06</strong> trong vòng 15 phút.`;
+    }
+
+    function sendConsultViaEmail() {
+      const name = document.getElementById('cf-name').value || 'Khách hàng';
+      const phone = document.getElementById('cf-phone').value || '';
+      const loc = document.getElementById('cf-location').value || '';
+      const budget = document.getElementById('cf-budget').value || '';
+      const note = document.getElementById('cf-note').value || '';
+      const subject = encodeURIComponent(`[qualityhome.com.vn] Yêu cầu tư vấn thiết kế thi công - ${name} (${phone})`);
+      const body = encodeURIComponent(`Họ tên: ${name}\nSố điện thoại: ${phone}\nKhu vực: ${loc}\nNgân sách: ${budget}\nNội dung: ${note}`);
+      window.location.href = `mailto:nhachatdesign@gmail.com?subject=${subject}&body=${body}`;
+    }
+
+    // TẢI FILE INDEX.HTML TRỰC TIẾP VỀ MÁY
+    function downloadThisHtmlFile() {
+      const htmlContent = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+      const blob = new Blob([htmlContent], { type: 'text/html;charset=utf-8' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'index.html';
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+    }
+
+    // KHỞI CHẠY KHI TẢI TRANG
+    window.addEventListener('DOMContentLoaded', () => {
+      renderProjects();
+      calculateConstructionCost();
+      evaluateFengShui();
+      syncLobanValue(1260);
+      renderHandbook();
+      if (window.lucide) {
+        window.lucide.createIcons();
+      }
+    });
+  </script>
+</body>
+</html>
